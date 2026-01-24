@@ -1,0 +1,939 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  
+}
+
+/* ---------------- TIPOGRAFÍA ---------------- */
+
+@font-face {
+  font-family: 'Audiowave';
+  src: url('fonts/Audiowave.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* Texto base */
+body {
+  font-family: 'Lora', serif;
+}
+
+/* Títulos */
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+}
+
+/* Botones */
+button,
+.menu button,
+.menu a {
+  font-family: 'Audiowave', sans-serif;
+  letter-spacing: 0.15em;
+}
+
+
+
+/* ---------------- BODY / GENERAL ---------------- */
+
+body.no-scroll {
+  overflow: hidden;
+  font-family: Audiowave;
+  color: rgb(244,152,152);
+  background: #2F4159;
+}
+
+body.home {
+  margin: 0;
+  min-height: 100vh;
+  background-color: #2F4159;
+  color: white;
+  font-family: 'Audiowide', sans-serif;
+  padding-top: 80px; /* reserva espacio visual para el menú */
+}
+
+/* ---------------- HERO ---------------- */
+
+header {
+  min-height: 100vh;
+  padding: 14rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.hero {
+  position: relative;
+  z-index: 10;
+transform: translateY(-120px); /* sube todo el bloque logo + claim*/
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  text-align: center;
+}
+
+.hero-logo {
+  width: 600px;        /* ajusta tamaño según tu logo */
+  height: auto;
+  margin-top: 5.2rem;
+}
+
+.hero-claim {
+  margin-bottom: 2.1rem; /* separación logo → claim */
+  font-family: 'Poppins', sans-serif;
+  font-weight: bolder;
+  font-size: 1.2rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #1884C4;
+  opacity: 0.85;
+}
+
+
+/* ---------------- BOTÓN HERO ---------------- */
+
+#enterBtn {
+  padding: 1rem 2.5rem;
+  font-size: 1rem;
+  letter-spacing: 0.15em;
+  background: #2F4159;
+  color: #F49898;
+  border: 2px solid #F49898;
+  cursor: pointer;
+  transition: all 0.3s ease;
+
+  animation: pulseBtn 2s infinite ease-in-out;
+  transform-origin: center center;
+}
+
+#enterBtn:hover {
+  background: #1884C4;
+  color: #2F4159;
+  font-weight: bolder;
+}
+
+@keyframes pulseBtn {
+  0%   { transform: scale(1); }
+  50%  { transform: scale(1.07); }
+  100% { transform: scale(1); }
+}
+
+/* ---------------- CANVAS P5 ---------------- */
+
+canvas {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+/* ---------------- MENÚ ---------------- */
+
+.menu {
+ 
+  position: fixed;
+  top: 1rem;
+  left: 2rem;
+  z-index: 100;
+
+  display: flex;
+  gap: 1.5rem;
+}
+
+.menu button {
+  background: #2F4159;
+  border: 1px solid #F49898;
+  color: #F49898;
+  padding: 0.6rem 1.4rem;
+  cursor: pointer;
+  font-family: 'Audiowide', sans-serif;
+  font-size: 0.8rem;
+  letter-spacing: 1px;
+  transition: all 0.3s ease;
+}
+
+.menu button:hover {
+  background: rgb(24, 132, 196);
+  color: black;
+;
+}
+
+/* ---------------- LOGO FLOTANTE ---------------- */
+
+.logo-float {
+  position: fixed;
+  top: 10px;
+  right: 30px;
+  height: 50px;
+  width: auto;
+  z-index: 100;
+  
+}
+
+
+/*/////////////////////////////////// ABOUT ME ////////////////////////////////////////////////////////////*/
+
+.about-section {
+  position: relative;
+  width: 100%;
+     
+}
+
+.about-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+/* ================= IMAGEN ================= */
+
+.about_img {
+  position: absolute;
+
+  /* POSICIÓN */
+  top: 11.5vh;
+  left: 0vw;
+
+  /* TAMAÑO */
+  width: 45vw;
+  height: 79vh;
+}
+
+.about_img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 0vw;
+}
+
+/* ================= TEXTO ================= */
+
+.about-text {
+  position: absolute;
+
+  /* POSICIÓN */
+  top: 18vh;
+  left: 48vw;
+
+  /* TAMAÑO */
+  width: 50vw;
+  min-height: 60vh;
+
+  padding: 3vw;
+  color: rgb(244,152,152);
+  backdrop-filter: blur(4px);
+  border-radius: 3vw;
+}
+
+
+/* /////////////////////////////////////////////////// WORKS ////////////////////////////*/
+
+/* === BASE SIZES (1920 aprox) === */
+.work-img-sm {
+  width: 360px;
+}
+
+.work-img-md {
+  width: 500px;
+}
+
+.work-img-lg {
+  width: 680px;
+}
+
+.work-text {
+  max-width: 420px;
+}
+
+.works-nav {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /*controla nº columnas para pantalla*/
+  gap: 0.5rem; /*separacion entre imagenes*/
+  max-width: 2400px;
+  width: 75%;;
+  margin: 1rem auto;
+  padding: 0 0rem;
+   
+}
+
+.work-card {
+  display: block;
+  border: 4px solid rgb(0, 0, 0);
+  cursor: pointer;
+ 
+}
+
+.work-card img {
+  
+  width: 100%;
+  height: auto;
+  display: block;
+  transition: transform 0.3s ease;
+  aspect-ratio: 4 / 3; /* controla proporción */
+  overflow: hidden;
+  object-fit: fill;
+  
+}
+
+.work-card:hover img{
+  transform: scale(1.10);
+  width: 100%;
+  height: 100%;
+   border: 5px solid rgb(0, 0, 0);
+  object-fit: fill;
+}
+
+/* ================= WORKS ================= */
+
+.work-item {
+  position: absolute;
+}
+
+.work-item.text {
+  font-family: 'Lora', serif;
+  color: rgb(244,152,152);
+}
+
+.work-item.text h2 {
+  font-family: 'Poppins', sans-serif;
+  color: rgb(24, 132, 196);
+}
+
+.work-inner {
+  position: relative;
+  height: 100%;
+  transform-origin: top center;
+}
+
+/* ================= WORK 1 ================= */
+
+.work-1 .work-item.image figure {
+  margin: 0; /* elimina margen por defecto */
+}
+
+.work-1 .work-inner {
+  transform: scale(0.85);
+  transform-origin: top center;
+  position: relative;
+  height: 260vh; /* altura completa de la sección */
+}
+
+/* Imágenes */
+.work-1 .img-1 img,
+.work-1 .img-2 img, 
+.work-1 .img-3 img{
+  width: 50vw;
+  height: 30vw;
+  object-fit: cover;
+  border-radius: 1vw;
+  border: solid rgb(24, 132, 196);
+}
+
+/* Posiciones */
+.work-1 .img-1 {top: 2vw;left: -5vw;}
+.work-1 .img-2 {top: 81vh;left: 115vh;}
+.work-1 .img-3 {top: 160vh;left: -10vh; 
+  background-color:#1884C4;opacity: 0.5; border-radius: 1vw;}
+
+/* Textos */
+.work-1 .txt-1 {
+  width: 50vw;
+  top: 2vw;
+  left: 50vw;
+  font-size: 1.5vw;
+  padding: 1.5vw;
+  background-color: rgba(0,0,0,0.1);
+  backdrop-filter: blur(0.5vw);
+  border-radius: 2vw;
+}
+
+.work-1 .txt-2 {
+  width: 50vw;
+  top: 35vw;
+  left: -5vw;
+  font-size: 1.5vw;
+  padding: 1vw;
+  background-color: rgba(0,0,0,0.1);
+  backdrop-filter: blur(0.5vw);
+  border-radius: 2vw;
+}
+
+/* Video */
+.work-1 .video-1 {
+  top: 72vw;
+  left: 50.5vw;
+  width: 50vw;
+  z-index: 5;
+  border-radius: 2vw;
+  border: solid rgb(24, 132, 196);
+}
+
+.work-1 .video-1 video {
+  width: 100%;
+  border-radius: 2vw;
+}
+
+/* ================= WORK 2 ================= */
+.work-2 .work-inner {
+  transform: scale(0.85);
+  transform-origin: top center;
+  position: relative;
+  height: 260vh; /* altura completa de la sección */
+}
+
+/* Imágenes */
+.work-2 .work-item.image figure {
+  margin: 0; /* elimina margen por defecto */
+}
+
+.work-2 .work-item.image img {
+  width: 50vw;
+  height: 30vw;
+  object-fit: cover;
+  border-radius: 1vw;
+  border: solid rgb(24, 132, 196);
+}
+
+/* Posiciones de las imágenes */
+.work-2 .img-3 { top: 0vh; left: 115vh; }
+.work-2 .img-4 { top: 65vh; left: -2vh; }
+.work-2 .img-5 { top: 75vh; left: 115vh; }
+.work-2 .img-6 { top: 150vh; left: 115vh; }
+
+/* Texto */
+.work-2 .txt-3 {
+  width: 47vw;
+  top: 0vw;
+  left: -1vw;
+  font-size: 1.5vw; /* uniforme con otros textos de works */
+  padding: 1.5vw;
+  background-color: rgba(0,0,0,0.1);
+  backdrop-filter: blur(0.5vw);
+  border-radius: 2vw;
+  position: absolute;
+}
+
+/* Video */
+.work-2 .video-2 {
+  top: 62.5vw;
+  left: -1vw;
+  width: 50vw;
+  z-index: 5;
+  position: absolute;
+}
+
+.work-2 .video-2 video {
+  width: 100%;
+  border-radius: 2vw;
+  border: solid rgb(24, 132, 196);
+}
+
+/* ================= WORK 3 ================= */
+
+.work-3 .work-inner {
+  transform: scale(0.85);
+  transform-origin: top center;
+  position: relative;
+  height: 260vh; /* altura de la sección */
+}
+
+/* Tamaño de imágenes */
+.work-3 .work-item.image img {
+  width: 50vw;
+  height: 30vw;
+  object-fit: cover; /* uniformizamos con los demás works */
+  border-radius: 1vw;
+  border: solid rgb(24, 132, 196);
+}
+
+/* Posiciones de las 5 imágenes */
+.work-3 .img-7  { top: 55vh;  left: -2vw; }
+.work-3 .img-8  { top: 55vh;  left: 52vw; }
+.work-3 .img-9  { top: 205vh; left: 53vw; }
+.work-3 .img-10 { top: 130vh; left: -2vw; }
+.work-3 .img-11 { top: 205vh; left: -2vw; }
+
+/* Video */
+.work-3 .video-3 {
+  top: 134vh;
+  left: 52vw;
+  width: 50vw;
+  z-index: 6;
+}
+
+.work-3 .video-3 video {
+  width: 100%;
+  border-radius: 2vw;
+  border: solid rgb(24, 132, 196);
+}
+
+/* Texto */
+.work-3 .txt-4 {
+  width: 98vw;
+  top: 0vh;
+  left: 2vw;
+  padding: 1.5vw;
+  background-color: rgba(0,0,0,0.1);
+  backdrop-filter: blur(0.5vw);
+  border-radius: 2vw;
+  font-size: 1.5vw;
+}
+
+/* Botones de video */
+.video-btn {
+  position: absolute;
+  top: 2vw;
+  right: 2vw;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background: rgba(0,0,0,0.6);
+  color: white;
+  cursor: pointer;
+  z-index: 20;
+}
+
+/* ================= WORK 4 ================= */
+
+.work-item figure {
+  margin: 0;
+}
+
+.work-4 .work-inner {
+  transform: scale(0.85);
+  transform-origin: top center;
+  position: relative;
+  height: 260vh; /* altura de la sección */
+}
+
+/* TEXTO */
+.work-4 .txt-5 {
+  width: 45vw;
+  top: 0vh;
+  left: 2vw;
+  font-size: 1.5vw;
+  padding: 1.2vw;
+  background-color: rgba(0,0,0,0.15);
+  backdrop-filter: blur(0.5vw);
+  border-radius: 1vw;
+}
+
+/* IMÁGENES */
+.work-4 .work-item.image img {
+  width: 45vw;
+  height: 20vw;
+  object-fit: cover;
+  border-radius: 1vw;
+  border: solid rgb(24, 132, 196);
+}
+
+/* Posiciones imágenes */
+.work-4 .img-12 { top: 0vh; left: 53vw; }
+.work-4 .img-13 { top: 53vh; left: 53vw; }
+.work-4 .img-14 { top: 80vh; left: 2vw; }
+.work-4 .img-15 { top: 133vh; left: 2vw; }
+
+/* VIDEO */
+.work-4 .video-4 {
+  top: 111vh;
+  left: 53vw;
+  width: 45vw;
+  z-index: 6;
+}
+
+.work-4 .video-4 video {
+  width: 100%;
+  border-radius: 2vw;
+  border: solid rgb(24, 132, 196);
+}
+
+/* ================= WORK 5 ================= */
+
+.work-5 .work-inner {
+  transform: scale(0.85);
+  transform-origin: top center;
+  position: relative;
+  height: 260vh; /* altura de la sección */
+}
+
+
+.work-item figure {
+  margin: 0;
+}
+
+
+
+/* TEXTO */
+.work-5 .txt-6 {
+  width: 48vw;
+  top: 0vh;
+  left: 2vw;
+  font-size: 1.5vw;
+  padding: 1.5vw;
+  background-color: rgba(0,0,0,0.15);
+  backdrop-filter: blur(0.5vw);
+  border-radius: 1vw;
+}
+
+/* IMÁGENES */
+.work-5 .work-item.image img {
+  width: 45vw;
+  height: 22vw;
+  object-fit: cover;
+  border-radius: 1vw;
+  border: solid rgb(24, 132, 196);
+}
+
+/* POSICIONES IMÁGENES */
+.work-5 .img-16 { top: 0vh;   left: 53vw; }
+.work-5 .img-17 { top: 58vh;  left: 53vw; }
+.work-5 .img-18 { top: 80vh;  left: 2vw; }
+.work-5 .img-19 { top: 115vh; left: 53vw; }
+.work-5 .img-20 { top: 138vh; left: 2vw; }
+
+
+/* VIDEO */
+.work-5 .video-5 {
+  top: 173vh;
+  left: 53vw;
+  width: 45vw;
+  z-index: 6;
+}
+
+.work-5 .video-5 video {
+  width: 100%;
+  border-radius: 2vw;
+  border: solid rgb(24, 132, 196);
+}
+
+/* ================= WORK 6 ================= */
+
+.work-item figure {
+  margin: 0;
+}
+
+.work-6 .work-inner {
+  transform: scale(0.85);
+  transform-origin: top center;
+  position: relative;
+  height: 260vh; /* altura de la sección */
+}
+
+
+/* TEXTO */
+.work-6 .txt-7 {
+  width: 46vw;
+  top: 0vh;
+  left: 2vw;
+  font-size: 1.5vw;
+  padding: 1.5vw;
+  background-color: rgba(0,0,0,0.15);
+  backdrop-filter: blur(0.5vw);
+  border-radius: 1vw;
+}
+
+/* IMÁGENES */
+.work-6 .work-item.image img {
+  width: 42vw;
+  height: 22vw;
+  object-fit: cover;
+  border-radius: 1vw;
+  border: solid rgb(24, 132, 196);
+}
+
+/* POSICIONES IMÁGENES */
+.work-6 .img-21 { top: 45vh;  left: 5vw; }
+.work-6 .img-22 { top: 58vh;  left: 50vw; }
+.work-6 .img-23 { top: 103vh;  left: 5vw; }
+
+/* VIDEO */
+.work-6 .video-6 {
+  top: 0vh;
+  left: 50vw;
+  width: 42vw;
+  z-index: 6;
+}
+
+.work-6 .video-6 video {
+  width: 100%;
+  border-radius: 2vw;
+  border: solid rgb(24, 132, 196);
+}
+
+/* Botón abrir vídeo en nueva pestaña */
+.open-btn {
+  position: absolute;
+  top: 2vw;
+  right: 4.5vw;              /* separado del mute */
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background: rgba(0,0,0,0.6);
+  color: white;
+  cursor: pointer;
+  z-index: 21;
+}
+/* ================= FIGCAPTION GLOBAL ================= */
+
+.work-section figure {
+  margin: 0;
+}
+
+.work-section figcaption {
+  display: block;
+  margin-top: 0.1em;
+
+  font-family: "Lora", serif;
+  font-size: clamp(18px, 1.1vw, 18px);
+  line-height: 1.3;
+
+  color: rgba(255, 255, 255, 0.75);
+  text-align: center;
+}
+
+/*////////////////////////////////////////////////////////////////////////*/
+html {
+  scroll-behavior: smooth;
+}
+.work-section {
+  scroll-margin-top: 100px; /* altura del menú */
+}
+@media (max-width: 1024px) {
+  .works-nav {
+    grid-template-columns: repeat(5, 1fr);
+    max-width: 900px;
+  }
+}
+
+@media (max-width: 600px) {
+  .works-nav {
+    grid-template-columns: 1fr;
+    max-width: 400px;
+  }
+}
+/*///////////////////////////////////////////////FRANJA NARANJA IMAGENES/////////////////////*/
+.works-band {
+  width: 100%;
+  height: auto;
+  background-color: rgba(255,255,255,0.1); /* o el color que quieras */
+  backdrop-filter: blur(4px);      /* opcional */
+ border-top: 2px solid rgba(255,255,255,0.15);
+  border-bottom: 2px solid rgba(255,255,255,0.15);
+  margin-top: 15px;   /* 👈 baja la franja */
+}
+/*////////////////////////////////////////COLOR BANDA INFERIOR DE CADA MINIATURA///////////*/
+.work-card figure {
+  position: relative;
+}
+
+.work-card figcaption {
+  color: #F49898;
+  font-family: 'Poppins', sans-serif;
+  font-weight: bold;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 1.2rem 4rem;
+  background: rgba(0,0,0, 0.7);
+  font-size: 0.8rem;
+  object-fit: fill;
+}
+.work-card:hover figcaption{
+  margin-left: 0vw;
+  margin-bottom: 0vw;
+  width: 100%px;
+  color: #F49898;
+  font-family: 'Poppins', sans-serif;
+  font-weight: bold;
+  background: rgba(0,0,0,1);
+  padding: 1.5rem 4rem;
+  font-size: 1.2rem;
+  
+}
+/*/////////////////////////////////////////////FRANJA BORROSA BOTONES-LOGO///////////////////////////////*/
+.nav-background {
+  position: fixed;
+  top: 0;
+  left: 0;
+
+  width: 100vw;      /* ancho total pantalla */
+  height: 70px;     /* altura de la franja */
+
+  background: rgba(0, 0, 0, 0.35); /* o el color que quieras */
+  backdrop-filter: blur(4px);      /* opcional */
+
+  z-index: 50;       /* ⬅️ por detrás del nav y logo */
+  pointer-events: none;
+}
+/*////////////////////////////////////////////////BOTON SUBIR SCROLL//////////////////////////////////////*/
+#toTop {
+  position: fixed;
+  bottom: 10px;
+  right: 30px;
+
+  width: 40px;
+  height: 40px;
+
+  border-radius: 50%;
+  background: #F49898;
+  border: 2px solid #2F4159;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  cursor: pointer;
+  z-index: 9999;
+
+  opacity: 0;
+  pointer-events: none;
+
+  transition: opacity 0.3s ease, transform 0.3s ease, background 0.3s ease;
+}
+
+#toTop.show {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+#toTop:hover {
+  transform: scale(1.1);
+  background: #1884C4;
+}
+
+#toTop img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+
+/*/////////////////////////////////VIDEO HOME////////////////////////////////////////*/
+
+.video-hero {
+  position: fixed;
+  top: 51.01%;
+  left: 0;
+  width: 100vw;                 /* de lado a lado */
+  height: 81vh;                 /* ajusta presencia vertical */
+  transform: translateY(-50%);
+  overflow: hidden;
+  z-index: 1;
+  pointer-events: none;
+}
+
+.video-hero video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;            /* clave para cubrir sin deformar */
+}
+/*/////////////////////////////////////FOOTER//////////////////////////////////////////*/
+/* =========================
+   Footer principal (NO TOCAR)
+   ========================= */
+.footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  backdrop-filter: blur(2px);
+  width: 100%;
+  padding: 1rem 0;
+
+  text-align: center;
+  background: rgba(0,0,0,0.15);
+
+  font-family: 'Poppins', sans-serif;
+  font-size: 0.75rem;
+  letter-spacing: 0.15em;
+
+  color: #F49898;
+  z-index: 10;
+}
+
+/* =========================
+   Estructura interna footer
+   ========================= */
+.footer-inner {
+  display: flex;
+  align-items: center;          /* alineación vertical perfecta */
+  justify-content: center;
+  gap: 2rem;
+  position: relative;
+}
+
+/* =========================
+   Iconos RRSS
+   ========================= */
+.footer-rrss {
+  display: flex;
+  gap: 0.75rem;
+}
+
+.footer-rrss a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 25px;                 /* tamaño del botón */
+  height: 25px;
+  border-radius: 50%;          /* ⚡ círculo completo */
+  overflow: hidden;
+
+  background: rgba(244,152,152,0.8);
+  border: 1px solid rgba(0, 0, 0, 0.5);
+
+  transition: transform 0.3s ease, background 0.3s ease;
+}
+
+.footer-rrss a:hover {
+  transform: scale(1.3);
+  background: #1884C4;
+}
+
+.footer-rrss img {
+ opacity: 0.6;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  border-radius: 50%;           /* asegura redondez total */
+}
+
+/* =========================
+   Texto del footer
+   ========================= */
+.footer p {
+  margin: 0;
+  white-space: nowrap;
+}
+
+/*////////////////////////////////////////////////ESCONDE ICONOS RRSS EN MOVIL//////////////*/
+@media (max-width: 600px) {
+  .footer-rrss {
+    display: none;
+  }
+}
+
+/* === LARGE SCREENS === */
+@media (min-width: 1920px) {
+  .work-img-sm { width: 420px; }
+  .work-img-md { width: 600px; }
+  .work-img-lg { width: 820px; }
+
+  .work-text { max-width: 520px; }
+}
+
+/* === 2K === */
+@media (min-width: 2560px) {
+  .work-img-sm { width: 520px; }
+  .work-img-md { width: 720px; }
+  .work-img-lg { width: 980px; }
+
+  .work-text { max-width: 640px; }
+}
+
+
+
+

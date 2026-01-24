@@ -1,0 +1,519 @@
+
+ 
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <title>Portfolio</title>
+
+  <!-- Tipografías -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Audiowide&display=swap" rel="stylesheet">
+
+  <!-- p5 -->
+  <script src="https://cdn.jsdelivr.net/npm/p5@1.11.7/lib/p5.min.js"></script>
+  <script src="sketch.js"></script>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="home">
+
+<div class="nav-background"></div>
+
+<!-- NAV -->
+<nav class="menu">
+  <button onclick="location.href='home.html'">HOME</button>
+  <button onclick="location.href='works.html'">WORKS</button>
+  <button onclick="location.href='about.html'">ABOUT ME</button>
+</nav>
+
+<img src="img/logo.png" alt="Logo" class="logo-float">
+
+<button id="toTop" aria-label="Volver arriba">
+  <img src="img/top.png" alt="Subir">
+</button>
+
+<!-- ================= WORKS NAV ================= -->
+
+<section class="works-band">
+  <section class="works-nav">
+
+    <a href="#work1" class="work-card">
+      <figure>
+        <img src="img/min/1.jpg" alt="Work 1">
+        <figcaption>Proyecto 1: ANIMACIÓN 2D (2025)</figcaption>
+      </figure>
+    </a>
+
+    <a href="#work2" class="work-card">
+      <figure>
+        <img src="img/min/2.png" alt="Work 2">
+        <figcaption>Proyecto 2: ANIMACIÓN 3D (2023)</figcaption>
+      </figure>
+    </a>
+<a href="#work3" class="work-card">
+      <figure>
+        <img src="img/min/3.png" alt="Work 3">
+        <figcaption>Proyecto 3: POST-PRODUCCIÓN (2024)</figcaption>
+      </figure>
+    </a>
+    <a href="#work4" class="work-card">
+      <figure>
+        <img src="img/min/4.png" alt="Work 4">
+        <figcaption>Proyecto 4: ANIMACIÓN 2D (2023)</figcaption>
+      </figure>
+    </a>
+    <a href="#work5" class="work-card">
+      <figure>
+        <img src="img/min/5.png" alt="Work 5">
+        <figcaption>Proyecto 5: REEL 2D/3D (2023)</figcaption>
+      </figure>
+    </a>
+    <a href="#work6" class="work-card">
+      <figure>
+        <img src="img/min/6.jpg" alt="Work 6">
+        <figcaption>Proyecto 6: PHOTOMOTION (2024)</figcaption>
+      </figure>
+    </a>
+    
+  </section>
+</section>
+
+<!-- ================= WORK 1 ================= -->
+<section id="work1" class="work-section work-1">
+  <div class="work-inner">
+
+    <!-- IMAGEN 1 -->
+    <div class="work-item image img-1">
+      <figure>
+        <img src="img/img_text/a.png" alt="Work 1">
+        <figcaption>Fig.1 - Ilustración de Susú (plano general)</figcaption>
+      </figure>
+    </div>
+
+    <!-- IMAGEN 2 -->
+    <div class="work-item image img-2">
+      <figure>
+        <img src="img/img_text/b.png" alt="Work 1">
+        <figcaption>Fig.2 - Ilustración de Susú (plano medio)  </figcaption>
+      </figure>
+    </div>
+
+    <!-- IMAGEN 3 -->
+    <div class="work-item image img-3">
+      <figure>
+        <img src="img/img_text/c.png" alt="Work 1">
+        <figcaption></figcaption>
+      </figure>
+    </div>
+
+    <!-- VIDEO -->
+    <div class="work-item video video-1">
+      <video autoplay loop muted playsinline>
+        <source src="img/susu.mp4" type="video/mp4">
+      </video>
+      <button class="video-btn mute-btn">🔇</button>
+      <button class="video-btn open-btn" data-video="img/susu.mp4">⛶</button>
+    </div>
+
+    <!-- TEXTO 1 -->
+    <div class="work-item text txt-1">
+      <h2>ANIMACIÓN 2D: PROYECTO SUSÚ</h2>
+      <p>
+        SINOPSIS: Susú es una joven huérfana encontrada en un abandonado laboratorio del planeta Rygar por los Möacks. 
+        Éstos acogen en su poblado a la pequeña Susú como a uno más de los suyos. A medida que la pequeña va creciendo, 
+        también lo hace el colosal poder que dormitaba en su interior. La joven, por mantener la integridad y la seguridad 
+        de la comunidad Möacks y el amor incondicional que siente hacia ellos, decide abandonarlos tras una infernal 
+        manifestación de su poder y buscar el origen de su causa. Pronto, descubrirá que sus poderes son el legado de una 
+        diosa arcana: Lilith, que fue desterrada injustamente por los doce dioses arcanos, creadores del cosmos, y busca 
+        con sed de venganza eliminarlos uno a uno.
+      </p>
+    </div>
+
+    <!-- TEXTO 2 -->
+    <div class="work-item text txt-2">
+      <h2>ANIMACIÓN 2D: DESARROLLO CREATIVO</h2>
+      <p>
+        La realización del proyecto inicialmente ha sido un trabajo de animación manual con Photoshop, Sketchbook Pro y 
+        Adobe Animate, para el bocetado, storyboard, animación y caracterización del personaje.<br>
+        Para el apartado de postproducción y realizar algunas de sus cinemáticas, efectos para el escenario, luz, color, 
+        sombras y partículas, se ha llevado a cabo con After Effects y código P5.js a través de Openprocessing.org.<br>
+        En cuanto al arte final del teaser, se ha realizado con Adobe Premiere para el vídeo y procesado por Adobe Audition 
+        para la música, los efectos sonoros y la voz en off. El resultado final es un pequeño teaser introductorio al 
+        personaje principal, donde se relatan sus inquietudes y objetivos como exterminadora de monstruos con intervención 
+        de su alter ego: Lilith.
+      </p>
+    </div>
+
+  </div>
+</section>
+
+
+<!-- ================= WORK 2 ================= -->
+<section id="work2" class="work-section work-2">
+  <div class="work-inner">
+
+    <div class="work-item image img-3">
+      <figure>
+        <img src="img/img_text/a1.png" alt="Work 2">
+        <figcaption>Fig.3 - Screenshot del reel: Moneda y Tubo</figcaption>
+      </figure>
+    </div>
+
+    <div class="work-item image img-4">
+      <figure>
+        <img src="img/img_text/a2.png" alt="Work 2">
+        <figcaption>Fig.4 - Screenshot del reel: Logotipo</figcaption>
+      </figure>
+    </div>
+
+    <div class="work-item image img-5">
+      <figure>
+        <img src="img/img_text/a3.png" alt="Work 2">
+        <figcaption>Fig.5 - Screenshot del reel: Moneda</figcaption>
+      </figure>
+    </div>
+
+    <div class="work-item image img-6">
+      <figure>
+        <img src="img/img_text/a4.png" alt="Work 2">
+        <figcaption>Fig.6 - Screenshot del reel: Escena final</figcaption>
+      </figure>
+    </div>
+
+    <div class="work-item video video-2">
+      <video autoplay loop muted playsinline>
+        <source src="img/mario.mp4" type="video/mp4">
+      </video>
+      <button class="video-btn mute-btn">🔇</button>
+      <button class="video-btn open-btn" data-video="img/mario.mp4" title="Ver en grande">⛶</button>
+    </div>
+
+    <div class="work-item text txt-3">
+      <h2>ANIMACIÓN 3D: SUPER MARIO</h2>
+      <p>
+        En esta ocasión he realizado un proyecto para un videojuego que apareció por primera vez en los años 80´s y que próximamente cumplirá su cuarenta aniversario; Súper Mario.
+        Un juego retro que llena de nostalgia los corazones de viejos gamers, llevado a cabo por Nintendo y que sin duda marcó un referente. Esto es una pequeña contribución homenajeada para aquellos primeros años de los videojuegos.
+        A nivel técnico se trata de un motion graphics donde se sucede una integración entre elementos en 3D y video real. Se ha utilizado principalmente Cinema 4D, After Effects y Premier Pro.
+      </p>
+    </div>
+
+  </div>
+</section>
+
+
+  <!-- ================= WORK 3 ================= -->
+<section id="work3" class="work-section work-3">
+  <div class="work-inner">
+
+    <!-- Imágenes -->
+    <div class="work-item image img-7">
+      <figure>
+        <img src="img/img_text/b2.png" alt="Work 3 imagen 1">
+        <figcaption>Fig.7 - VFx ojos y venas de la muñeca diabólica I</figcaption>
+      </figure>
+    </div>
+
+    <div class="work-item image img-8">
+      <figure>
+        <img src="img/img_text/b0.gif" alt="Work 3 imagen 2">
+        <figcaption>Fig.8 - VFx ojos y venas de la muñeca diabólica II</figcaption>
+      </figure>
+    </div>
+
+    <div class="work-item image img-9">
+      <figure>
+        <img src="img/img_text/b1.png" alt="Work 3 imagen 3">
+        <figcaption>Fig.9 - Logotipo de la productora para animar</figcaption>
+      </figure>
+    </div>
+
+    <div class="work-item image img-10">
+      <figure>
+        <img src="img/img_text/b3.jpg" alt="Work 3 imagen 4">
+        <figcaption>Fig.10 - Foto con actices principales y director el día del estreno</figcaption>
+      </figure>
+    </div>
+
+    <div class="work-item image img-11">
+      <figure>
+        <img src="img/img_text/b4.jpg" alt="Work 3 imagen 5">
+        <figcaption>Fig.11 - Carteles de las nuevas películas: MUSAS y Calma KARMA</figcaption>
+      </figure>
+    </div>
+
+    <!-- VIDEO -->
+    <div class="work-item video video-3">
+      <video autoplay loop playsinline muted>
+        <source src="img/bruja.mp4" type="video/mp4">
+      </video>
+      <button class="video-btn mute-btn">🔇</button>
+      <button class="video-btn open-btn" data-video="img/bruja.mp4" title="Ver en grande">⛶</button>
+    </div>
+
+    <!-- Texto -->
+    <div class="work-item text txt-4">
+      <h2>POST-PRODUCCIÓN: LA BRUJA AURA</h2>
+      <p>
+        Este es un proyecto real cinematográfico sobre un cortometraje en Granada (Huetor Tajar) para la productora independiente RAYSA Productions. Me encargaron realizar la cabecera, dar animación al logotipo de la productora para sus trabajos.
+        Después me encargaron realizar el teaser de presentación y finalmente terminé realizando VFX para caracterización de personajes y post-producir la edición del film al completo incluido los créditos finales.
+        Aparte de este trabajo, me contrataron para realizar los carteles de dos films más; "Calma Karma" y "Musas" para RAYSA Productions & La Tarara.<br><br>
+        Para la realización de la animación del logotipo y VFX de los personajes utilicé After Effects, para la postproducción del teaser y film utilicé Adobe Premier Pro y para los carteles o ilustración utilicé Photoshop.
+      </p>
+    </div>
+
+  </div>
+</section>
+
+
+<!-- ================= WORK 4 ================= -->
+<section id="work4" class="work-section work-4">
+  <div class="work-inner">
+
+    <!-- TEXTO -->
+    <div class="work-item text txt-5">
+      <h2>ANIMACIÓN 2D · REEL ARNOLD</h2>
+      <p>
+        En esta ocasión presento un corto o reel de animación sobre un personaje mundialmente conocido como es TERMINATOR. Esto fue un proyecto académico en el cual practicábamos conceptos de animación y aplicación.
+        Para este caso concreto se produjo la animación del humo, fuego, la hoja de papel y el personaje de forma manual por Photoshop. Posteriormente se ilustró el fondo y todo su contenido por Sketchbook <Prog>y luego los 
+        efectos de rayos, glitch y demás fueron sometidos a After Effects, para finalmente concluir en Adobe Premier Pro para los efectos de iluminación y color. La pieza se traduce en un simpático guiño a la 
+        famosa saga de Terminator aplicando un poco sentido humorístico y sin olvidar su memorable coletilla -"Volveré!-"
+      </Prog>
+      </p>
+    </div>
+
+    <!-- IMÁGENES -->
+    <div class="work-item image img-12">
+      <figure>
+        <img src="img/img_text/c1.png" alt="Work 4 image 1">
+        <figcaption>Fig.12 - Screeshot: Bidones, fuego y humo como entrada</figcaption>
+      </figure>
+    </div>
+
+    <div class="work-item image img-13">
+      <figure>
+        <img src="img/img_text/c2.png" alt="Work 4 image 2">
+        <figcaption>Fig.13 - Screenshot: Hoja de papel volando con el viento</figcaption>
+      </figure>
+    </div>
+
+    <div class="work-item image img-14">
+      <figure>
+        <img src="img/img_text/c3.png" alt="Work 4 image 3">
+        <figcaption>Fig.14 - Screenshot: Arnold entra en escena</figcaption>
+      </figure>
+    </div>
+
+    <div class="work-item image img-15">
+      <figure>
+        <img src="img/img_text/c4.png" alt="Work 4 image 4">
+        <figcaption>Fig.15 - Screenshot: Arnold  se despide con su típica frase -¡Volveré!</figcaption>
+      </figure>
+    </div>
+
+    <!-- VIDEO -->
+    <div class="work-item video video-4">
+      <video autoplay loop playsinline muted>
+        <source src="img/arnold.mp4" type="video/mp4">
+      </video>
+      <button class="video-btn mute-btn">🔇</button>
+      <button class="video-btn open-btn" data-video="img/arnold.mp4" title="Ver en grande">⛶</button>
+    </div>
+
+  </div>
+</section>
+
+<!-- ================= WORK 5 ================= -->
+<section id="work5" class="work-section work-5">
+  <div class="work-inner">
+
+    <!-- TEXTO -->
+    <div class="work-item text txt-6">
+      <h2>REEL: JURASSIC PARK</h2>
+      <p>
+        Este fue un proyecto académico muy ilustrativo a nivel personal porque en él pude integrar varios métodos aprendidos en otras asignaturas. Se trata de un reel en primera persona, tratado 
+        desde el punto de vista de un videojuego, en este caso concreto, escogí Jurassic Park, porque me pareció apropiado intercalar render en 3D con imágenes reales.<br>
+        El proyecto aporta un marcador de vidas, horario diurno/nocturno, número de latidos y tiempo restante, etc... para ello recurrí a programas como Photoshop e Illustrator para crear esa máscara, 
+        luego el video real fue procesado por Adobe Premier Pro para controlar el efecto nocturno y diurno en diferentes ventanas e integrar cada video de cada animal pasando previamente por After Effects 
+        para retocar su aspecto inicial e integrarlo en la imagen real.
+      </p>
+    </div>
+
+    <!-- IMÁGENES -->
+    <div class="work-item image img-16">
+      <figure>
+        <img src="img/img_text/p5.png" alt="Work 5 imagen 1">
+        <figcaption>Fig.16 - Screenshot del videojuego: Menú de selección de misiones</figcaption>
+      </figure>
+    </div>
+
+    <div class="work-item image img-17">
+      <figure>
+        <img src="img/img_text/p2.png" alt="Work 5 imagen 2">
+        <figcaption>Fig.17 - Screenshot del videojuego: Obtención del cuchillo</figcaption>
+      </figure>
+    </div>
+
+    <div class="work-item image img-18">
+      <figure>
+        <img src="img/img_text/p1.png" alt="Work 5 imagen 3">
+        <figcaption>Fig.18 - Screenshot del videojuego: Velociraptor aparece de la nada</figcaption>
+      </figure>
+    </div>
+
+    <div class="work-item image img-19">
+      <figure>
+        <img src="img/img_text/p3.png" alt="Work 5 imagen 4">
+        <figcaption>Fig.19 - Screenshot del videojuego: Triceraptors atacando</figcaption>
+      </figure>
+    </div>
+
+    <div class="work-item image img-20">
+      <figure>
+        <img src="img/img_text/p6.png" alt="Work 5 imagen 5">
+        <figcaption>Fig.20 - Screenshot del videojuego: Triceraptors gana el juego</figcaption>
+      </figure>
+    </div>
+
+    <!-- VIDEO -->
+    <div class="work-item video video-5">
+      <video autoplay loop muted playsinline>
+        <source src="img/park.mp4" type="video/mp4">
+      </video>
+      <button class="video-btn mute-btn">🔇</button>
+      <button class="video-btn open-btn" data-video="img/park.mp4" title="Ver en grande">⛶</button>
+    </div>
+
+  </div>
+</section>
+
+<!-- ================= WORK 6 ================= -->
+<section id="work6" class="work-section work-6">
+  <div class="work-inner">
+    
+    <!-- TEXTO -->
+    <div class="work-item text txt-7">
+      <h2>PHOTOMOTION: ARCANE-JINX</h2>
+      <p>
+        Este trabajo basado en la creación de un photomotion se centra en la exploración visual y narrativa a través
+        del movimiento de los elementos en pantalla, el montaje y la integración de imagen y sonido.
+        El proyecto busca una lectura clara, directa y estética, manteniendo
+        coherencia visual y ritmo audiovisual.
+      </p>
+    </div>
+
+    <!-- IMÁGENES -->
+    <div class="work-item image img-21">
+      <figure>
+        <img src="img/img_text/x1.jpg" alt="Work 6 imagen 1">
+        <figcaption>Fig.21 - Photomotion Arcane – Plano 01</figcaption>
+      </figure>
+    </div>
+
+    <div class="work-item image img-22">
+      <figure>
+        <img src="img/img_text/x2.jpg" alt="Work 6 imagen 2">
+        <figcaption>Fig.22 - Photomotion Arcane – Plano 02</figcaption>
+      </figure>
+    </div>
+
+    <div class="work-item image img-23">
+      <figure>
+        <img src="img/img_text/x3.jpg" alt="Work 6 imagen 3">
+        <figcaption>Fig.23 - Photomotion Arcane – Plano 03</figcaption>
+      </figure>
+    </div>
+
+    <!-- VIDEO -->
+    <div class="work-item video video-6">
+      <video autoplay loop muted playsinline>
+        <source src="img/jinx.mp4" type="video/mp4">
+      </video>
+      <button class="video-btn mute-btn">🔇</button>
+      <button class="video-btn open-btn" data-video="img/jinx.mp4" title="Ver en grande">⛶</button>
+    </div>
+
+  </div>
+</section>
+
+
+<!-- ================= FOOTER ================= -->
+
+<footer class="footer">
+  <div class="footer-inner">
+
+    <div class="footer-rrss left">
+      <a href="https://www.instagram.com/dramgoz/" target="_blank">
+        <img src="img/rrss/instagram.png" alt="Instagram">
+      </a>
+      <a href="https://github.com/DRamGoz" target="_blank">
+        <img src="img/rrss/github.png" alt="GitHub">
+      </a>
+    </div>
+
+    <p>© 2026 · David RamgÖz · All rights reserved</p>
+
+    <div class="footer-rrss right">
+      <a href="https://www.behance.net/davidramgoz" target="_blank">
+        <img src="img/rrss/behance.png" alt="Behance">
+      </a>
+      <a href="https://www.linkedin.com/in/davidramgoz/" target="_blank">
+        <img src="img/rrss/linkedin.png" alt="LinkedIn">
+      </a>
+    </div>
+
+  </div>
+</footer>
+
+<!-- ================= JS ================= -->
+
+<script>
+  document.querySelectorAll('.mute-btn').forEach(btn => {
+    btn.addEventListener('click', () => {
+      const video = btn.parentElement.querySelector('video');
+      video.muted = !video.muted;
+      btn.textContent = video.muted ? '🔇' : '🔊';
+    });
+  });
+</script>
+<script>
+  document.querySelectorAll('.open-btn').forEach(btn => {
+    btn.addEventListener('click', () => {
+      window.open(btn.dataset.video, '_blank');
+    });
+  });
+</script>
+
+<script>
+ const btn = document.getElementById("toTop");
+const worksSection = document.querySelector(".works-band");
+
+if (worksSection) {
+  // SOLO si estamos en WORKS
+  btn.addEventListener("click", () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth"
+    });
+  });
+
+  window.addEventListener("scroll", () => {
+    if (window.scrollY > 300) {
+      btn.classList.add("show");
+    } else {
+      btn.classList.remove("show");
+    }
+  });
+} else {
+  // En cualquier otra página, ocultarlo del todo
+  btn.style.display = "none";
+}
+</script>
+
+
+</html> 
+</body>
