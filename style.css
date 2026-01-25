@@ -981,6 +981,86 @@ html {
     overflow: visible;
   }
 }
+/* ======================= MENÚ HAMBURGUESA MOVIL ======================= */
+@media (max-width: 768px) {
+
+  /* Ocultar menú de escritorio */
+  .desktop-menu {
+    display: none;
+  }
+
+  /* Mostrar menú hamburguesa */
+  .mobile-menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 0 4vw;
+    background: rgba(0,0,0,0.6);
+    backdrop-filter: blur(10px);
+    z-index: 999;
+  }
+
+  /* Icono hamburguesa */
+  .hamburger {
+    width: 35px;
+    height: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    cursor: pointer;
+  }
+  .hamburger span {
+    display: block;
+    height: 4px;
+    background: rgb(244,152,152);
+    border-radius: 2px;
+  }
+
+  /* Links del menú móvil (ocultos por defecto) */
+  .mobile-links {
+    position: absolute;
+    top: 10vh;
+    right: 0;
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    background: rgba(0,0,0,0.85);
+    backdrop-filter: blur(6px);
+    padding: 1rem;
+    gap: 1rem;
+    display: none; /* se mostrará con JS */
+  }
+  .mobile-links button {
+    background: none;
+    border: none;
+    color: rgb(244,152,152);
+    font-size: 4vw;
+    text-align: right;
+    cursor: pointer;
+  }
+
+  /* Ajustes del logo flotante en móvil */
+  .logo-float {
+    position: fixed;
+    top: 12vh;
+    right: 4vw;
+    width: 14vw;
+    height: auto;
+    z-index: 1200;
+  }
+
+  /* Ajustes responsive del contenido (imagen y texto) */
+  .about-section { height: auto; padding-top: 10vh; overflow: visible; }
+  .about-inner { height: auto; }
+  .about_img { position: relative; top: auto; left: auto; width: 100%; height: 45vh; }
+  .about_img img { width: 100%; height: 100%; object-fit: cover; }
+  .about-text { position: relative; top: auto; left: auto; width: 90%; margin: 5vh auto; padding: 6vw; font-size: 4vw; line-height: 1.6; min-height: unset; }
+}
 
 
 
