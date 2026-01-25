@@ -143,8 +143,8 @@ canvas {
 }
 
 .menu button {
-  background: #2F4159;
-  border: 1px solid #F49898;
+  background: transparent;
+ 
   color: #F49898;
   padding: 0.6rem 1.4rem;
   cursor: pointer;
@@ -1083,14 +1083,14 @@ html {
 
 
   /* LOGO FLOTANTE ESCRITORIO */
-  .logo-float {
+ /* .logo-float {
     position: fixed;
     top: 2vh;    /* distancia desde el borde superior */
-    right: 2vw;    /* esquina superior derecha */
-    width: 10vw;    /* tamaño del logo */
-    height: auto;
+ /*   right: 2vw;    /* esquina superior derecha */
+ /*   width: 10vw;    /* tamaño del logo */
+ /*   height: auto;/*
     z-index: 1000; /* encima de todo */
-  }
+ /* }*/
 }
 
 
