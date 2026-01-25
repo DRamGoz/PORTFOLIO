@@ -933,6 +933,54 @@ html {
 
   .work-text { max-width: 640px; }
 }
+/* ======================= RESPONSIVE MOBILE ======================= */
+@media (max-width: 768px) {
+
+  .about-section {
+    height: auto;
+    overflow: visible;
+    padding-top: 12vh; /* espacio menú */
+  }
+
+  .about-inner {
+    height: auto;
+  }
+
+  /* IMAGEN */
+  .about_img {
+    position: relative;
+    top: auto;
+    left: auto;
+
+    width: 100%;
+    height: 45vh;
+  }
+
+  .about_img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  /* TEXTO */
+  .about-text {
+    position: relative;
+    top: auto;
+    left: auto;
+
+    width: 90%;
+    height: auto;
+    min-height: unset;
+
+    margin: 5vh auto;
+    padding: 6vw;
+
+    font-size: 4vw;
+    line-height: 1.6;
+
+    overflow: visible;
+  }
+}
 
 
 
