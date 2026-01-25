@@ -1080,14 +1080,7 @@ html {
     z-index: 999;
   }
 
-  .menu button {
-    font-size: 1.2vw;
-    padding: 0.5vh 1vw;
-    color: #F49898;
-    background: transparent;
-    border: none;
-    cursor: pointer;
-  }
+
 
   /* LOGO FLOTANTE ESCRITORIO */
   .logo-float {
