@@ -939,7 +939,7 @@ html {
   .about-section {
     height: auto;
     overflow: visible;
-    padding-top: 12vh; /* espacio menú */
+    padding-top: 10vh; /* espacio menú */
   }
 
   .about-inner {
