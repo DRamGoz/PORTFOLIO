@@ -1062,27 +1062,47 @@ html {
   .about_img img { width: 100%; height: 100%; object-fit: cover; }
   .about-text { position: relative; top: auto; left: auto; width: 90%; margin: 5vh auto; padding: 6vw; font-size: 4vw; line-height: 1.6; min-height: unset; }
 }
-/* ===================== MENÚ ESCRITORIO: About Me ===================== */
+/* ===================== MENU ESCRITORIO ===================== */
 @media (min-width: 769px) {
-  body.about .menu {
-    display: flex;
+
+  .menu {
     position: fixed;
     top: 0;
     left: 0;
+
     width: 100%;
     height: 10vh;
-    justify-content: flex-end; /* o center según prefieras */
+
+    display: flex;
+    justify-content: flex-start; /* botones a la izquierda */
+    align-items: center;
     gap: 2vw;
-    background: rgba(0,0,0,0.6);
+
+    background: rgba(0, 0, 0, 0.6);
     backdrop-filter: blur(10px);
     z-index: 999;
   }
 
-  body.about .menu button {
-    font-size: 1.2rem;
-    padding: 0.5rem 1rem;
+  .menu button {
+    font-size: 1.2vw;
+    padding: 0.5vh 1vw;
+    color: white;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+  }
+
+  /* LOGO FLOTANTE ESCRITORIO */
+  .logo-float {
+    position: fixed;
+    top: 1.5vh;    /* distancia desde el borde superior */
+    right: 2vw;    /* esquina superior derecha */
+    width: 6vw;    /* tamaño del logo */
+    height: auto;
+    z-index: 1000; /* encima de todo */
   }
 }
+
 
 
 
