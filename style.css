@@ -1078,7 +1078,7 @@ html {
     align-items: center;
     gap: 2vw;
 
-    background: rgba(0, 0, 0, 0.6);
+    background: rgba(0, 0, 0, 0.3);
     backdrop-filter: blur(10px);
     z-index: 999;
   }
@@ -1086,7 +1086,7 @@ html {
   .menu button {
     font-size: 1.2vw;
     padding: 0.5vh 1vw;
-    color: white;
+    color: #F49898;
     background: transparent;
     border: none;
     cursor: pointer;
