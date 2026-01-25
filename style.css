@@ -1006,6 +1006,25 @@ html {
   }
 
 }
+@media (max-width: 768px) {
+
+  .logo-float {
+    position: fixed;
+    top: 10.5vh;       /* justo debajo del menú */
+    right: 4vw;
+
+    width: 14vw;
+    height: auto;
+
+    z-index: 1200;
+
+    display: block;
+    visibility: visible;
+    opacity: 1;
+  }
+
+}
+
 
 
 
