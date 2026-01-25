@@ -157,7 +157,6 @@ canvas {
 .menu button:hover {
   background: rgb(24, 132, 196);
   color: black;
-;
 }
 
 /* ---------------- LOGO FLOTANTE ---------------- */
@@ -1076,7 +1075,7 @@ html {
     display: flex;
     justify-content: flex-start; /* botones a la izquierda */
     align-items: center;
-    gap: 2vw;
+    gap: 1.5vw;
 
     background: rgba(0, 0, 0, 0.3);
     backdrop-filter: blur(10px);
