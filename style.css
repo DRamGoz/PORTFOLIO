@@ -1045,6 +1045,7 @@ html {
   }
 
   /* Ajustes del logo flotante en móvil */
+  @media (max-width: 768px) {
   .logo-float {
     position: fixed;
     top: 2rem;
@@ -1053,7 +1054,7 @@ html {
     height: auto;
     z-index: 1200;
   }
-
+  }
   /* Ajustes responsive del contenido (imagen y texto) */
   .about-section { height: auto; padding-top: 10vh; overflow: visible; }
   .about-inner { height: auto; }
