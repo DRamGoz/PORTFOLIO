@@ -1095,9 +1095,9 @@ html {
   /* LOGO FLOTANTE ESCRITORIO */
   .logo-float {
     position: fixed;
-    top: 1.5vh;    /* distancia desde el borde superior */
+    top: 2vh;    /* distancia desde el borde superior */
     right: 2vw;    /* esquina superior derecha */
-    width: 6vw;    /* tamaño del logo */
+    width: 10vw;    /* tamaño del logo */
     height: auto;
     z-index: 1000; /* encima de todo */
   }
