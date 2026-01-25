@@ -1077,7 +1077,7 @@ html {
     align-items: center;
     gap: 1.5vw;
 
-    background: rgba(0, 0, 0, 0.3);
+    background: rgba(0, 0, 0, 0.1);
     backdrop-filter: blur(10px);
     z-index: 999;
   }
