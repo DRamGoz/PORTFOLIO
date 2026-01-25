@@ -1047,9 +1047,9 @@ html {
   /* Ajustes del logo flotante en móvil */
   .logo-float {
     position: fixed;
-    top: 12vh;
-    right: 4vw;
-    width: 14vw;
+    top: 1rem;
+    left: 1.5rem;
+    width: 18vw;
     height: auto;
     z-index: 1200;
   }
