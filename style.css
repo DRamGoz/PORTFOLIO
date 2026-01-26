@@ -932,83 +932,37 @@ html {
 
   .work-text { max-width: 640px; }
 }
-/* ======================= RESPONSIVE MOBILE ======================= */
-@media (max-width: 768px) {
-
-
-  .about-section {
-    height: auto;
-    overflow: visible;
-    padding-top: 10vh; /* espacio menú */
-  }
-
-  .about-inner {
-    height: auto;
-  }
-
-  /* IMAGEN */
-  .about_img {
-    position: relative;
-    top: auto;
-    left: auto;
-
-    width: 100%;
-    height: 45vh;
-  }
-
-  .about_img img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-  }
-
-  /* TEXTO */
-  .about-text {
-    position: relative;
-    top: auto;
-    left: auto;
-
-    width: 90%;
-    height: auto;
-    min-height: unset;
-
-    margin: 5vh auto;
-    padding: 6vw;
-
-    font-size: 4vw;
-    line-height: 1.6;
-
-    overflow: visible;
-  }
-}
-/* ======================= MENÚ HAMBURGUESA MOVIL ======================= */
-@media (max-width: 768px) {
-
+/* ======================= VISIBILIDAD BASE MENÚS ======================= */
 .desktop-menu {
-  display: none;
-}
-
-.mobile-menu {
   display: flex;
 }
 
+.mobile-menu {
+  display: none;
+}
 
-  /* Mostrar menú hamburguesa */
+/* ======================= RESPONSIVE MOBILE ======================= */
+@media (max-width: 768px) {
+
+  /* ===== OCULTAR / MOSTRAR MENÚS ===== */
+  .desktop-menu {
+    display: none;
+  }
+
   .mobile-menu {
+    display: flex;
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     height: 10vh;
-    display: flex;
     justify-content: flex-end;
     align-items: center;
     padding: 0 4vw;
-   
     z-index: 999;
   }
 
-  /* Icono hamburguesa */
+  /* ===== ICONO HAMBURGUESA ===== */
   .hamburger {
     width: 35px;
     height: 25px;
@@ -1017,6 +971,7 @@ html {
     justify-content: space-between;
     cursor: pointer;
   }
+
   .hamburger span {
     display: block;
     height: 4px;
@@ -1024,20 +979,20 @@ html {
     border-radius: 2px;
   }
 
-  /* Links del menú móvil (ocultos por defecto) */
+  /* ===== LINKS MENÚ MÓVIL ===== */
   .mobile-links {
     position: absolute;
     top: 10vh;
     right: 0;
     width: 200px;
-    display: flex;
+    display: none; /* se activa con JS */
     flex-direction: column;
     background: rgba(0,0,0,0.85);
     backdrop-filter: blur(6px);
     padding: 1rem;
     gap: 1rem;
-    display: none; /* se mostrará con JS */
   }
+
   .mobile-links button {
     background: none;
     border: none;
@@ -1047,7 +1002,44 @@ html {
     cursor: pointer;
   }
 
-  /* Ajustes del logo flotante en móvil */
+  /* ===== ABOUT RESPONSIVE ===== */
+  .about-section {
+    height: auto;
+    padding-top: 10vh;
+    overflow: visible;
+  }
+
+  .about-inner {
+    height: auto;
+  }
+
+  .about_img {
+    position: relative;
+    width: 100%;
+    height: 45vh;
+    top: auto;
+    left: auto;
+  }
+
+  .about_img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .about-text {
+    position: relative;
+    width: 90%;
+    margin: 5vh auto;
+    padding: 6vw;
+    font-size: 4vw;
+    line-height: 1.6;
+    min-height: unset;
+    top: auto;
+    left: auto;
+  }
+
+  /* ===== LOGO FLOTANTE MÓVIL (el que ya te funciona) ===== */
   .logo-float {
     position: fixed;
     top: 2rem;
@@ -1056,15 +1048,7 @@ html {
     height: auto;
     z-index: 1200;
   }
-  /* Ajustes responsive del contenido (imagen y texto) */
-  .about-section { height: auto; padding-top: 10vh; overflow: visible; }
-  .about-inner { height: auto; }
-  .about_img { position: relative; top: auto; left: auto; width: 100%; height: 45vh; }
-  .about_img img { width: 100%; height: 100%; object-fit: cover; }
-  .about-text { position: relative; top: auto; left: auto; width: 90%; margin: 5vh auto; padding: 6vw; font-size: 4vw; line-height: 1.6; min-height: unset; 
-  }
 }
-
 
 
 
