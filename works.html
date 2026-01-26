@@ -482,7 +482,15 @@
 </footer>
 
 <!-- ================= JS ================= -->
+<script>
+  const hamburger = document.getElementById("hamburger");
+  const mobileLinks = document.getElementById("mobileLinks");
 
+  hamburger.addEventListener("click", () => {
+    mobileLinks.style.display =
+      mobileLinks.style.display === "flex" ? "none" : "flex";
+  });
+</script>
 <script>
   document.querySelectorAll('.mute-btn').forEach(btn => {
     btn.addEventListener('click', () => {
