@@ -808,7 +808,7 @@ html {
   height: 100%;
   object-fit: contain;
 }
-/* ======================= WORKS · MOBILE ======================= */
+/* ======================= WORKS · MOBILE ================================================================================================================================ */
 @media (max-width: 768px) {
 
   /* Elimina escalados de escritorio */
@@ -819,45 +819,45 @@ html {
   .work-4 .work-inner,
   .work-5 .work-inner,
   .work-6 .work-inner {
-    transform: none !important;
-    height: auto !important;
+    transform: none;
+    height: auto;
   }
 
   /* Secciones en flujo normal */
   .work-section {
     position: relative;
-    height: auto !important;
+    height: auto;
     padding-top: 12vh;
     padding-bottom: 8vh;
   }
 
   /* Items dejan de ser absolutos */
   .work-item {
-    position: relative !important;
-    top: auto !important;
-    left: auto !important;
+    position: relative;
+    top: auto;
+    left: auto;
     margin: 6vh auto;
   }
 
   /* Imágenes */
   .work-item.image img {
-    width: 90vw !important;
-    height: auto !important;
+    width: 90vw;
+    height: auto;
     border-radius: 3vw;
   }
 
   /* Vídeos */
   .work-item.video,
   .work-item.video video {
-    width: 90vw !important;
+    width: 90vw;
     height: auto;
     border-radius: 3vw;
   }
 
   /* Texto */
   .work-item.text {
-    width: 90vw !important;
-    font-size: 4vw !important;
+    width: 90vw;
+    font-size: 4vw;
     padding: 6vw;
     border-radius: 4vw;
   }
