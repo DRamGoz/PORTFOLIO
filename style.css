@@ -809,78 +809,115 @@ html {
   object-fit: contain;
 }
 /* ======================= WORKS · MOBILE ================================================================================================================================ */
-/* ======================= WORKS · MOBILE ======================= */
+/* ======================= RESPONSIVE MOBILE WORKS ======================= */
 @media (max-width: 768px) {
 
-  /* ======== Anula escalado y alturas forzadas ======== */
-  .work-inner,
-  .work-1 .work-inner,
-  .work-2 .work-inner,
-  .work-3 .work-inner,
-  .work-4 .work-inner,
-  .work-5 .work-inner,
-  .work-6 .work-inner {
-    transform: none;
-    height: auto;
+  /* Ocultar menú de escritorio y mostrar hamburguesa */
+  .menu.desktop-menu {
+    display: none;
+  }
+  .mobile-menu {
+    display: flex;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 10vh;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 0 4vw;
+    z-index: 999;
   }
 
-  /* ======== Work-items en flujo normal ======== */
-  .work-item {
+  /* Icono hamburguesa */
+  .hamburger {
+    width: 35px;
+    height: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    cursor: pointer;
+  }
+  .hamburger span {
+    display: block;
+    height: 4px;
+    background: rgb(244,152,152);
+    border-radius: 2px;
+  }
+
+  /* Links del menú móvil (ocultos por defecto) */
+  .mobile-links {
+    position: absolute;
+    top: 10vh;
+    right: 0;
+    width: 200px;
+    display: none;
+    flex-direction: column;
+    background: rgba(0,0,0,0.85);
+    backdrop-filter: blur(6px);
+    padding: 1rem;
+    gap: 1rem;
+  }
+  .mobile-links button {
+    background: none;
+    border: none;
+    color: rgb(244,152,152);
+    font-size: 4vw;
+    text-align: right;
+    cursor: pointer;
+  }
+
+  /* Logo flotante en móvil */
+  .logo-float {
+    position: fixed;
+    top: 2rem;
+    left: 1.5rem;
+    width: 30vw;
+    height: auto;
+    z-index: 1200;
+  }
+
+  /* Reset posiciones absolutas de images y vídeos */
+  .work-item.image, .work-item.video {
     position: relative;
     top: auto;
     left: auto;
+    width: 90vw;
+    height: auto;
     margin: 5vh auto;
   }
 
-  /* ======== Imágenes ======== */
-  .work-item.image img {
-    width: 90vw;
-    height: auto;
-    border-radius: 2vw;
-  }
-
-  /* ======== Vídeos ======== */
-  .work-item.video,
-  .work-item.video video {
-    width: 90vw;
-    height: auto;
-    border-radius: 2vw;
-  }
-
-  /* ======== Texto ======== */
+  /* Reset texto */
   .work-item.text {
+    position: relative;
+    top: auto;
+    left: auto;
     width: 90vw;
+    margin: 5vh auto;
     font-size: 4vw;
     padding: 6vw;
     border-radius: 4vw;
   }
 
-  .work-item.text h2 {
-    font-size: 5vw;
-  }
-
-  /* ======== Figcaption ======== */
+  /* Ajuste de figcaption */
   .work-section figcaption {
     font-size: 3.5vw;
-    padding: 0.5rem 1rem;
+    line-height: 1.4;
+    text-align: center;
   }
 
-  /* ======== Botones de vídeo ======== */
-  .video-btn,
-  .open-btn {
-    width: 36px;
-    height: 36px;
-    top: 1vw;
-    right: 1vw;
+  /* Ajuste de videos */
+  .work-item.video video {
+    width: 100%;
+    height: auto;
   }
 
-  /* ======== Separación entre works ======== */
-  .work-section {
-    padding-top: 12vh;
-    padding-bottom: 8vh;
+  /* Escala general de work-inner */
+  .work-inner {
+    transform: scale(1);
+    height: auto;
   }
 }
-
 
 
 /*/////////////////////////////////VIDEO HOME////////////////////////////////////////*/
