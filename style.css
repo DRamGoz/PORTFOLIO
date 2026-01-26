@@ -1160,6 +1160,7 @@ html {
   }
 }
 /* ======================= WORKS MOBILE (1–6) ======================= */
+/* ======================= WORKS MOBILE (1–6) CORREGIDO ======================= */
 @media (max-width: 768px) {
 
   /* CONTENEDOR GENERAL */
@@ -1181,6 +1182,7 @@ html {
     position: relative;
     top: auto;
     left: auto;
+    margin: 0 auto;
   }
 
   /* ================= TEXTO ================= */
@@ -1191,41 +1193,51 @@ html {
     font-size: 4vw;
     line-height: 1.6;
     border-radius: 4vw;
+    background: rgba(0,0,0,0.6); /* mejora lectura en móviles */
   }
 
   .work-item.text h2 {
     font-size: 6vw;
     margin-bottom: 2vh;
+    line-height: 1.2;
   }
 
   /* ================= IMÁGENES ================= */
   .work-item.image {
     width: 100%;
+    text-align: center;
+    margin: 0 auto 5vh auto;
   }
 
   .work-item.image img {
     width: 90%;
     height: auto;
-    margin: 0 auto;
     display: block;
+    margin: 0 auto;
     border-radius: 3vw;
+    object-fit: cover;
   }
 
-  figcaption {
+  /* figcaption para todas las imágenes */
+  .work-item.image figcaption {
     font-size: 3.5vw;
     margin-top: 1vh;
     text-align: center;
+    color: rgba(255,255,255,0.85);
   }
 
   /* ================= VIDEO ================= */
   .work-item.video {
     width: 100%;
+    text-align: center;
+    margin: 0 auto 6vh auto;
   }
 
   .work-item.video video {
     width: 90%;
-    margin: 0 auto;
+    height: auto;
     display: block;
+    margin: 0 auto;
     border-radius: 3vw;
   }
 
@@ -1233,30 +1245,25 @@ html {
   .video-btn,
   .open-btn {
     top: 2vw;
-    right: 6vw;
-    width: 32px;
-    height: 32px;
+    right: 5vw;
+    width: 36px;
+    height: 36px;
   }
 
-  /* ================= WORK 1 ================= */
-  .work-1 .work-inner { gap: 6vh; }
-
-  /* ================= WORK 2 ================= */
-  .work-2 .work-inner { gap: 6vh; }
-
-  /* ================= WORK 3 ================= */
-  .work-3 .work-inner { gap: 6vh; }
-
-  /* ================= WORK 4 ================= */
-  .work-4 .work-inner { gap: 6vh; }
-
-  /* ================= WORK 5 ================= */
-  .work-5 .work-inner { gap: 6vh; }
-
-  /* ================= WORK 6 ================= */
-  .work-6 .work-inner { gap: 6vh; }
+  /* ================= WORK 1–6 GAP ================= */
+  .work-1 .work-inner,
+  .work-2 .work-inner,
+  .work-3 .work-inner,
+  .work-4 .work-inner,
+  .work-5 .work-inner,
+  .work-6 .work-inner {
+    gap: 6vh;
+  }
 
 }
+
+
+ 
 
 
 
