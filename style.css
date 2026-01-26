@@ -934,13 +934,7 @@ html {
 }
 /* ======================= RESPONSIVE MOBILE ======================= */
 @media (max-width: 768px) {
-.desktop-menu {
-  display: flex;
-}
 
-.mobile-menu {
-  display: none;
-}
 
   .about-section {
     height: auto;
