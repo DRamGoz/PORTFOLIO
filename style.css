@@ -144,7 +144,7 @@ canvas {
 
 .menu button {
   background: transparent;
- 
+ border: 0px solid #F49898;
   color: #F49898;
   padding: 0.6rem 1.4rem;
   cursor: pointer;
