@@ -808,6 +808,73 @@ html {
   height: 100%;
   object-fit: contain;
 }
+/* ======================= WORKS · MOBILE ======================= */
+@media (max-width: 768px) {
+
+  /* Elimina escalados de escritorio */
+  .work-inner,
+  .work-1 .work-inner,
+  .work-2 .work-inner,
+  .work-3 .work-inner,
+  .work-4 .work-inner,
+  .work-5 .work-inner,
+  .work-6 .work-inner {
+    transform: none !important;
+    height: auto !important;
+  }
+
+  /* Secciones en flujo normal */
+  .work-section {
+    position: relative;
+    height: auto !important;
+    padding-top: 12vh;
+    padding-bottom: 8vh;
+  }
+
+  /* Items dejan de ser absolutos */
+  .work-item {
+    position: relative !important;
+    top: auto !important;
+    left: auto !important;
+    margin: 6vh auto;
+  }
+
+  /* Imágenes */
+  .work-item.image img {
+    width: 90vw !important;
+    height: auto !important;
+    border-radius: 3vw;
+  }
+
+  /* Vídeos */
+  .work-item.video,
+  .work-item.video video {
+    width: 90vw !important;
+    height: auto;
+    border-radius: 3vw;
+  }
+
+  /* Texto */
+  .work-item.text {
+    width: 90vw !important;
+    font-size: 4vw !important;
+    padding: 6vw;
+    border-radius: 4vw;
+  }
+
+  .work-item.text h2 {
+    font-size: 5vw;
+  }
+
+  /* Botones vídeo */
+  .video-btn,
+  .open-btn {
+    width: 42px;
+    height: 42px;
+    top: 2vw;
+    right: 2vw;
+  }
+}
 
 
 /*/////////////////////////////////VIDEO HOME////////////////////////////////////////*/
