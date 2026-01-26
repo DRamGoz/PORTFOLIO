@@ -934,6 +934,13 @@ html {
 }
 /* ======================= RESPONSIVE MOBILE ======================= */
 @media (max-width: 768px) {
+.desktop-menu {
+  display: flex;
+}
+
+.mobile-menu {
+  display: none;
+}
 
   .about-section {
     height: auto;
@@ -983,10 +990,14 @@ html {
 /* ======================= MENÚ HAMBURGUESA MOVIL ======================= */
 @media (max-width: 768px) {
 
-  /* Ocultar menú de escritorio */
-  .desktop-menu {
-    display: none;
-  }
+.desktop-menu {
+  display: none;
+}
+
+.mobile-menu {
+  display: flex;
+}
+
 
   /* Mostrar menú hamburguesa */
   .mobile-menu {
