@@ -809,7 +809,7 @@ html {
   object-fit: contain;
 }
 /* ======================= WORKS · MOBILE ================================================================================================================================ */
-/* ======================= RESPONSIVE MOBILE WORKS ======================= */
+
 @media (max-width: 768px) {
 
   /* Ocultar menú de escritorio y mostrar hamburguesa */
@@ -1158,6 +1158,104 @@ html {
     height: auto;
     z-index: 1200;
   }
+}
+/* ======================= WORKS MOBILE (1–6) ======================= */
+@media (max-width: 768px) {
+
+  /* CONTENEDOR GENERAL */
+  .work-section {
+    padding-top: 12vh;        /* espacio menú hamburguesa */
+    width: 100%;
+  }
+
+  .work-inner {
+    transform: none;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 6vh;
+  }
+
+  /* RESET POSICIONAMIENTO ABSOLUTO */
+  .work-item {
+    position: relative;
+    top: auto;
+    left: auto;
+  }
+
+  /* ================= TEXTO ================= */
+  .work-item.text {
+    width: 90%;
+    margin: 0 auto;
+    padding: 5vw;
+    font-size: 4vw;
+    line-height: 1.6;
+    border-radius: 4vw;
+  }
+
+  .work-item.text h2 {
+    font-size: 6vw;
+    margin-bottom: 2vh;
+  }
+
+  /* ================= IMÁGENES ================= */
+  .work-item.image {
+    width: 100%;
+  }
+
+  .work-item.image img {
+    width: 90%;
+    height: auto;
+    margin: 0 auto;
+    display: block;
+    border-radius: 3vw;
+  }
+
+  figcaption {
+    font-size: 3.5vw;
+    margin-top: 1vh;
+    text-align: center;
+  }
+
+  /* ================= VIDEO ================= */
+  .work-item.video {
+    width: 100%;
+  }
+
+  .work-item.video video {
+    width: 90%;
+    margin: 0 auto;
+    display: block;
+    border-radius: 3vw;
+  }
+
+  /* BOTONES DE VIDEO */
+  .video-btn,
+  .open-btn {
+    top: 2vw;
+    right: 6vw;
+    width: 32px;
+    height: 32px;
+  }
+
+  /* ================= WORK 1 ================= */
+  .work-1 .work-inner { gap: 6vh; }
+
+  /* ================= WORK 2 ================= */
+  .work-2 .work-inner { gap: 6vh; }
+
+  /* ================= WORK 3 ================= */
+  .work-3 .work-inner { gap: 6vh; }
+
+  /* ================= WORK 4 ================= */
+  .work-4 .work-inner { gap: 6vh; }
+
+  /* ================= WORK 5 ================= */
+  .work-5 .work-inner { gap: 6vh; }
+
+  /* ================= WORK 6 ================= */
+  .work-6 .work-inner { gap: 6vh; }
+
 }
 
 
