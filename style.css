@@ -809,9 +809,10 @@ html {
   object-fit: contain;
 }
 /* ======================= WORKS · MOBILE ================================================================================================================================ */
+/* ======================= WORKS · MOBILE ======================= */
 @media (max-width: 768px) {
 
-  /* Elimina escalados de escritorio */
+  /* ======== Anula escalado y alturas forzadas ======== */
   .work-inner,
   .work-1 .work-inner,
   .work-2 .work-inner,
@@ -823,38 +824,30 @@ html {
     height: auto;
   }
 
-  /* Secciones en flujo normal */
-  .work-section {
-    position: relative;
-    height: auto;
-    padding-top: 12vh;
-    padding-bottom: 8vh;
-  }
-
-  /* Items dejan de ser absolutos */
+  /* ======== Work-items en flujo normal ======== */
   .work-item {
     position: relative;
     top: auto;
     left: auto;
-    margin: 6vh auto;
+    margin: 5vh auto;
   }
 
-  /* Imágenes */
+  /* ======== Imágenes ======== */
   .work-item.image img {
     width: 90vw;
     height: auto;
-    border-radius: 3vw;
+    border-radius: 2vw;
   }
 
-  /* Vídeos */
+  /* ======== Vídeos ======== */
   .work-item.video,
   .work-item.video video {
     width: 90vw;
     height: auto;
-    border-radius: 3vw;
+    border-radius: 2vw;
   }
 
-  /* Texto */
+  /* ======== Texto ======== */
   .work-item.text {
     width: 90vw;
     font-size: 4vw;
@@ -866,15 +859,28 @@ html {
     font-size: 5vw;
   }
 
-  /* Botones vídeo */
+  /* ======== Figcaption ======== */
+  .work-section figcaption {
+    font-size: 3.5vw;
+    padding: 0.5rem 1rem;
+  }
+
+  /* ======== Botones de vídeo ======== */
   .video-btn,
   .open-btn {
-    width: 42px;
-    height: 42px;
-    top: 2vw;
-    right: 2vw;
+    width: 36px;
+    height: 36px;
+    top: 1vw;
+    right: 1vw;
+  }
+
+  /* ======== Separación entre works ======== */
+  .work-section {
+    padding-top: 12vh;
+    padding-bottom: 8vh;
   }
 }
+
 
 
 /*/////////////////////////////////VIDEO HOME////////////////////////////////////////*/
