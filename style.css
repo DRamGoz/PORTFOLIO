@@ -1273,7 +1273,26 @@ html {
   transform: none !important;
 }
 
- 
+ /* === DEBUG ABSOLUTO WORKS === */
+
+.work-section,
+.work-inner,
+.work-item {
+  all: unset;
+  display: block;
+}
+
+.work-section {
+  width: 100%;
+  padding: 40px 0;
+  background: rgba(255,0,0,0.05);
+}
+
+.work-item {
+  margin: 20px auto;
+  width: 90%;
+}
+
 
 
 
