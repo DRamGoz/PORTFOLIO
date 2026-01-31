@@ -53,7 +53,7 @@ body.home {
   padding-top: 80px; /* reserva espacio visual para el menú */
 }
 
-/* ---------------- HERO ---------------- */
+/* ---------------- HERO --------------- */
 
 header {
   min-height: 100vh;
@@ -817,7 +817,7 @@ html {
     display: none;
   }
   .mobile-menu {
-    display: flex;
+    display: none;
     position: fixed;
     top: 0;
     left: 0;
