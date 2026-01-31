@@ -810,13 +810,13 @@ html {
 }
  /*======================= WORKS · MOBILE ================================================================================================================================ */
 
-/*@media (max-width: 768px) {
+@media (max-width: 768px) {
 
   /* Ocultar menú de escritorio y mostrar hamburguesa */
-/*  .menu.desktop-menu {
+  .menu.desktop-menu {
     display: none;
   }
- /* .mobile-menu {
+  .mobile-menu {
     display: flex;
     position: fixed;
     top: 0;
@@ -827,10 +827,10 @@ html {
     align-items: center;
     padding: 0 4vw;
     z-index: 999;
-  }*/
+  }
 
   /* Icono hamburguesa */
- /* .hamburger {
+  .hamburger {
     width: 35px;
     height: 25px;
     display: flex;
@@ -846,7 +846,7 @@ html {
   }
 
   /* Links del menú móvil (ocultos por defecto) */
- /* .mobile-links {
+  .mobile-links {
     position: absolute;
     top: 10vh;
     right: 0;
@@ -868,7 +868,7 @@ html {
   }
 
   /* Logo flotante en móvil */
- /* .logo-float {
+  .logo-float {
     position: fixed;
     top: 2rem;
     left: 1.5rem;
@@ -878,7 +878,7 @@ html {
   }
 
   /* Reset posiciones absolutas de images y vídeos */
-/* .work-item.image, .work-item.video {
+ .work-item.image, .work-item.video {
     position: relative;
     top: auto;
     left: auto;
@@ -888,7 +888,7 @@ html {
   }
 
   /* Reset texto */
-/*  .work-item.text {
+  .work-item.text {
     position: relative;
     top: auto;
     left: auto;
@@ -900,155 +900,25 @@ html {
   }
 
   /* Ajuste de figcaption */
-/*  .work-section figcaption {
+  .work-section figcaption {
     font-size: 3.5vw;
     line-height: 1.4;
     text-align: center;
   }
 
   /* Ajuste de videos */
-/*  .work-item.video video {
+ .work-item.video video {
     width: 100%;
     height: auto;
   }
 
   /* Escala general de work-inner */
-/*  .work-inner {
+  .work-inner {
     transform: scale(1);
     height: auto;
   }
 }
-/* ======================= WORKS MOBILE (1–6) ======================= */
-@media (max-width: 768px) {
 
-  /* MENÚ */
-  .menu.desktop-menu {
-    display: none; /* ocultamos menú escritorio */
-  }
-
-  .menu.mobile-menu {
-    display: flex; /* mostramos menú móvil */
-    flex-direction: column;
-    position: fixed;
-    top: 0;
-    right: 0;
-    width: auto;
-    z-index: 2000;
-  }
-
-  /* Icono hamburguesa */
-  .hamburger {
-    width: 35px;
-    height: 25px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    cursor: pointer;
-    margin: 1rem;
-  }
-  .hamburger span {
-    display: block;
-    height: 4px;
-    background: rgb(244,152,152);
-    border-radius: 2px;
-  }
-
-  /* Links del menú móvil (ocultos por defecto) */
-  .mobile-links {
-    position: fixed;
-    top: 8vh;
-    right: 1rem;
-    width: 200px;
-    display: none;
-    flex-direction: column;
-    background: rgba(0,0,0,0.85);
-    backdrop-filter: blur(6px);
-    padding: 1rem;
-    gap: 1rem;
-    border-radius: 1rem;
-    z-index: 2100;
-  }
-
-  .mobile-links button {
-    background: none;
-    border: none;
-    color: rgb(244,152,152);
-    font-size: 4vw;
-    text-align: left;
-    cursor: pointer;
-  }
-
-  /* ================= CONTENEDOR GENERAL ================= */
-  .work-section {
-    padding-top: 12vh;        /* espacio menú hamburguesa */
-    width: 100%;
-  }
-
-  .work-inner {
-    transform: none;
-    height: auto;
-    display: flex;
-    flex-direction: column;
-    gap: 6vh;
-  }
-
-  /* RESET POSICIONAMIENTO ABSOLUTO */
-  .work-item {
-    position: relative;
-    top: auto;
-    left: auto;
-    width: 90%;
-    margin: 0 auto 5vh auto;
-  }
-
-  /* ================= TEXTO ================= */
-  .work-item.text {
-    width: 90%;
-    margin: 0 auto;
-    padding: 5vw;
-    font-size: 4vw;
-    line-height: 1.6;
-    border-radius: 4vw;
-  }
-
-  .work-item.text h2 {
-    font-size: 6vw;
-    margin-bottom: 2vh;
-  }
-
-  /* ================= IMÁGENES ================= */
-  .work-item.image img {
-    width: 100%;
-    height: auto;
-    border-radius: 3vw;
-    display: block;
-    margin: 0 auto;
-  }
-
-  figcaption {
-    font-size: 3.5vw;
-    margin-top: 1vh;
-    text-align: center;
-  }
-
-  /* ================= VIDEO ================= */
-  .work-item.video video {
-    width: 100%;
-    height: auto;
-    border-radius: 3vw;
-    display: block;
-    margin: 0 auto;
-  }
-
-  /* BOTONES DE VIDEO */
-  .video-btn,
-  .open-btn {
-    top: 2vw;
-    right: 6vw;
-    width: 32px;
-    height: 32px;
-  }
-}
 
 
 /*/////////////////////////////////VIDEO HOME////////////////////////////////////////*/
