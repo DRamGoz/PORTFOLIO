@@ -1162,12 +1162,12 @@ html {
 }
 /* ======================= WORKS MOBILE (1–6) ======================= */
 /* ======================= WORKS MOBILE (1–6) CORREGIDO ======================= */
-@media (max-width: 768px) {
+/*@media (max-width: 768px) {
 
   /* CONTENEDOR GENERAL */
-  .work-section {
+/* .work-section {
     padding-top: 12vh;        /* espacio menú hamburguesa */
-    width: 100%;
+  /*  width: 100%;
   }
 
   .work-inner {
@@ -1179,7 +1179,7 @@ html {
   }
 
   /* RESET POSICIONAMIENTO ABSOLUTO */
-  .work-item {
+ /* .work-item {
     position: relative;
     top: auto;
     left: auto;
@@ -1187,7 +1187,7 @@ html {
   }
 
   /* ================= TEXTO ================= */
-  .work-item.text {
+/*  .work-item.text {
     width: 90%;
     margin: 0 auto;
     padding: 5vw;
@@ -1195,16 +1195,16 @@ html {
     line-height: 1.6;
     border-radius: 4vw;
     background: rgba(0,0,0,0.6); /* mejora lectura en móviles */
-  }
+/*  }
 
-  .work-item.text h2 {
+/*  .work-item.text h2 {
     font-size: 6vw;
     margin-bottom: 2vh;
     line-height: 1.2;
   }
 
   /* ================= IMÁGENES ================= */
-  .work-item.image {
+/*  .work-item.image {
     width: 100%;
     text-align: center;
     margin: 0 auto 5vh auto;
@@ -1220,7 +1220,7 @@ html {
   }
 
   /* figcaption para todas las imágenes */
-  .work-item.image figcaption {
+/*  .work-item.image figcaption {
     font-size: 3.5vw;
     margin-top: 1vh;
     text-align: center;
@@ -1228,7 +1228,7 @@ html {
   }
 
   /* ================= VIDEO ================= */
-  .work-item.video {
+/*  .work-item.video {
     width: 100%;
     text-align: center;
     margin: 0 auto 6vh auto;
@@ -1243,7 +1243,7 @@ html {
   }
 
   /* BOTONES DE VIDEO */
-  .video-btn,
+/*  .video-btn,
   .open-btn {
     top: 2vw;
     right: 5vw;
@@ -1252,13 +1252,13 @@ html {
   }
 
   /* ================= WORK 1–6 GAP ================= */
-  .work-1 .work-inner,
+/*  .work-1 .work-inner,
   .work-2 .work-inner,
   .work-3 .work-inner,
   .work-4 .work-inner,
   .work-5 .work-inner,
   .work-6 .work-inner {
-    gap: 6vh;
+    gap: 6vh;*/
   }
 
 
