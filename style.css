@@ -816,7 +816,7 @@ html {
   .menu.desktop-menu {
     display: none;
   }
-  .mobile-menu {
+ /* .mobile-menu {
     display: flex;
     position: fixed;
     top: 0;
@@ -827,6 +827,15 @@ html {
     align-items: center;
     padding: 0 4vw;
     z-index: 999;
+  }*/
+  .menu.mobile-menu {
+    display: flex; /* mostramos menú móvil */
+    flex-direction: column;
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: auto;
+    z-index: 2000;
   }
 
   /* Icono hamburguesa */
