@@ -942,7 +942,7 @@ html {
   transform: scale(1.3);
   background: #1884C4;
 }
-@media (max-width: 600px) {
+@media (min-width: 600px) {
 
   .footer-rrss {
     display: none;
@@ -990,5 +990,6 @@ html {
 }
 
 */
+
 
 
