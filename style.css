@@ -1051,18 +1051,18 @@ html {
 }
 /* ======================= WORK MOBILE · COLUMNA ÚNICA ======================= */
 
-/*@media (max-width: 768px) {
+@media (max-width: 412px) {
 
   
- /* ===== OCULTAR / MOSTRAR MENÚS ===== */
-/*  .desktop-menu {
+/* ===== OCULTAR / MOSTRAR MENÚS ===== */
+  .desktop-menu {
     display: none;
   }
 }
-  /* CONTENEDOR GENERAL *//*
+  /* CONTENEDOR GENERAL */
   .work-section {
     width: 100%;
-    padding: 14vh 0 8vh; /* espacio menú *//*
+    padding: 14vh 0 8vh; /* espacio menú */
   }
 
   .work-inner {
@@ -1072,7 +1072,7 @@ html {
     gap: 6vh;
   }
 
-  /* RESET TOTAL DE ITEMS *//*
+  /* RESET TOTAL DE ITEMS */
   .work-item {
     position: relative;
     width: 100%;
