@@ -981,21 +981,7 @@ html {
     background: rgb(244,152,152);
     border-radius: 2px;
   }
- .hamburguesa_1 {
-    width: 35px;
-    height: 25px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    cursor: pointer;
-  }
 
-  .hamburguesa_1 span {
-    display: block;
-    height: 4px;
-    background: rgb(244,152,152);
-    border-radius: 2px;
-  }
   /* ===== LINKS MENÚ MÓVIL ===== */
   .mobile-links {
     position: absolute;
@@ -1096,7 +1082,21 @@ html {
     left: auto;
     transform: none;
   }
+ .hamburguesa_1 {
+    width: 35px;
+    height: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    cursor: pointer;
+  }
 
+  .hamburguesa_1 span {
+    display: block;
+    height: 4px;
+    background: rgb(244,152,152);
+    border-radius: 2px;
+  }
   /* ================= TEXTO ================= */
   .work-item.text {
     width: 90%;
