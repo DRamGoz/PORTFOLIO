@@ -975,13 +975,13 @@ html {
     cursor: pointer;
   }
 
-  .hamburger_1 span {
+  .hamburger span {
     display: block;
     height: 4px;
     background: rgb(244,152,152);
     border-radius: 2px;
   }
- .hamburger_1 {
+ .hamburguesa_1 {
     width: 35px;
     height: 25px;
     display: flex;
@@ -990,7 +990,7 @@ html {
     cursor: pointer;
   }
 
-  .hamburger span {
+  .hamburguesa_1 span {
     display: block;
     height: 4px;
     background: rgb(244,152,152);
