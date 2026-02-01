@@ -947,7 +947,7 @@ html {
 
   /* ===== OCULTAR / MOSTRAR MENÚS ===== */
   .desktop-menu {
-    display: none;
+    display: flex;
   }
   .mobile-menu {
     display: flex;
