@@ -1056,7 +1056,7 @@ html {
   /* OCULTAR MINIATURAS */
   .works-band,
   .works-nav,
-  .desktop-menu{
+  menu .desktop-menu{
     display: none;
   }
 
