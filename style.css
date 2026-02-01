@@ -943,7 +943,7 @@ html {
 }
 
 /* ======================= RESPONSIVE MOBILE ======================= */
-/*@media (max-width: 768px) {
+/@media (max-width: 768px) {
 
   .desktop-menu {
     display: none;
@@ -961,7 +961,7 @@ html {
     z-index: 999;
   }
 
-  /* ===== ICONO HAMBURGUESA ===== *//*
+  /* ===== ICONO HAMBURGUESA ===== */
   .hamburger {
     width: 35px;
     height: 25px;
@@ -978,13 +978,13 @@ html {
     border-radius: 2px;
   }
 
-  /* ===== LINKS MENÚ MÓVIL ===== *//*
+  /* ===== LINKS MENÚ MÓVIL ===== */
   .mobile-links {
     position: absolute;
     top: 10vh;
     right: 0;
     width: 200px;
-    display: none; /* se activa con JS *//*
+    display: none; /* se activa con JS */
     flex-direction: column;
     background: rgba(0,0,0,0.85);
     backdrop-filter: blur(6px);
@@ -1001,7 +1001,7 @@ html {
     cursor: pointer;
   }
 
-  /* ===== ABOUT RESPONSIVE ===== *//*
+  /* ===== ABOUT RESPONSIVE ===== */
   .about-section {
     height: auto;
     padding-top: 10vh;
@@ -1038,7 +1038,7 @@ html {
     left: auto;
   }
 
-  /* ===== LOGO FLOTANTE MÓVIL (el que ya te funciona) ===== *//*
+  /* ===== LOGO FLOTANTE MÓVIL (el que ya te funciona) ===== */
   .logo-float {
     position: fixed;
     top: 2rem;
