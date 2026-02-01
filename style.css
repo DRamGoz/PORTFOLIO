@@ -1051,11 +1051,11 @@ html {
 }
 /* ======================= WORK MOBILE · COLUMNA ÚNICA ======================= */
 
-@media (max-width: 768px) {
+/*@media (max-width: 768px) {
 
   
  /* ===== OCULTAR / MOSTRAR MENÚS ===== */
-  .desktop-menu {
+/*  .desktop-menu {
     display: none;
   }
 }
