@@ -949,10 +949,9 @@ html {
   .desktop-menu {
     display: none;
   }
-  .hamburguesa_1{
-    display: flex;
-  }
-
+.mobile-menu_1{
+  display: flex;
+}
   .mobile-menu {
     display: flex;
     position: fixed;
@@ -976,13 +975,27 @@ html {
     cursor: pointer;
   }
 
+  .hamburger_1 span {
+    display: block;
+    height: 4px;
+    background: rgb(244,152,152);
+    border-radius: 2px;
+  }
+ .hamburger_1 {
+    width: 35px;
+    height: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    cursor: pointer;
+  }
+
   .hamburger span {
     display: block;
     height: 4px;
     background: rgb(244,152,152);
     border-radius: 2px;
   }
-
   /* ===== LINKS MENÚ MÓVIL ===== */
   .mobile-links {
     position: absolute;
