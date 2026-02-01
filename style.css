@@ -1050,6 +1050,98 @@ html {
     z-index: 1200;
   }
 }
+/* ======================= WORK MOBILE · COLUMNA ÚNICA ======================= */
+@media (max-width: 768px) {
+
+  /* OCULTAR MINIATURAS */
+  .works-band,
+  .works-nav {
+    display: none;
+  }
+
+  /* CONTENEDOR GENERAL */
+  .work-section {
+    width: 100%;
+    padding: 14vh 0 8vh; /* espacio menú */
+  }
+
+  .work-inner {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 6vh;
+  }
+
+  /* RESET TOTAL DE ITEMS */
+  .work-item {
+    position: relative;
+    width: 100%;
+    top: auto;
+    left: auto;
+    transform: none;
+  }
+
+  /* ================= TEXTO ================= */
+  .work-item.text {
+    width: 90%;
+    margin: 0 auto;
+    padding: 6vw;
+    font-size: 4vw;
+    line-height: 1.6;
+    border-radius: 4vw;
+  }
+
+  .work-item.text h2 {
+    font-size: 6vw;
+    margin-bottom: 2vh;
+  }
+
+  /* ================= IMÁGENES ================= */
+  .work-item.image figure {
+    width: 100%;
+    margin: 0;
+  }
+
+  .work-item.image img {
+    width: 90%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    border-radius: 4vw;
+  }
+
+  .work-item.image figcaption {
+    width: 90%;
+    margin: 1vh auto 0;
+    font-size: 3.5vw;
+    text-align: center;
+  }
+
+  /* ================= VIDEO ================= */
+  .work-item.video video {
+    width: 90%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    border-radius: 4vw;
+  }
+
+  .video-btn {
+    top: 2vw;
+    right: 6vw;
+    width: 32px;
+    height: 32px;
+  }
+
+  /* ================= LOGO ================= */
+  .logo-float {
+    position: fixed;
+    top: 2rem;
+    left: 1.5rem;
+    width: 30vw;
+    z-index: 1200;
+  }
+}
 
 
 
