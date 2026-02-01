@@ -1057,8 +1057,11 @@ html {
 /* ===== OCULTAR / MOSTRAR MENÚS ===== */
   .desktop-menu {
     display: none;
+    .work-section figcaption: none;
+  .figcaption: none;
   }
-}
+  
+
   /* CONTENEDOR GENERAL */
   .work-section {
     width: 100%;
