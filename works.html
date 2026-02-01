@@ -516,6 +516,15 @@
       mobileLinks.style.display === "flex" ? "none" : "flex";
   });
 </script>
+	<script>
+  const hamburguesa_1 = document.getElementById("hamburguesa_1");
+  const mobileLinks = document.getElementById("mobileLinks");
+
+  hamburguesa_1.addEventListener("click", () => {
+    mobileLinks.style.display =
+      mobileLinks.style.display === "flex" ? "none" : "flex";
+  });
+</script>
 <script>
   document.querySelectorAll('.mute-btn').forEach(btn => {
     btn.addEventListener('click', () => {
