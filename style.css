@@ -934,13 +934,13 @@ html {
   .work-text { max-width: 640px; }
 }
 /* ======================= VISIBILIDAD BASE MENÚS ======================= */
-.desktop-menu {
+/*.desktop-menu {
   display: flex;
 }
 
 .mobile-menu {
   display: none;
-}
+}*/
 
 /* ======================= RESPONSIVE MOBILE ======================= */
 @media (max-width: 768px) {
