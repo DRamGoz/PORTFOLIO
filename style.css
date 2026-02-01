@@ -1050,45 +1050,6 @@ html {
     z-index: 1200;
   }
 }
-/* ===== ICONO HAMBURGUESA ===== */
-  .hamburger_1 {
-    width: 35px;
-    height: 25px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    cursor: pointer;
-  }
-
-  .hamburger_1 span {
-    display: block;
-    height: 4px;
-    background: rgb(244,152,152);
-    border-radius: 2px;
-  }
-
-  /* ===== LINKS MENÚ MÓVIL ===== */
-  .mobile-links {
-    position: absolute;
-    top: 10vh;
-    right: 0;
-    width: 200px;
-    display: none; /* se activa con JS */
-    flex-direction: column;
-    background: rgba(0,0,0,0.85);
-    backdrop-filter: blur(6px);
-    padding: 1rem;
-    gap: 1rem;
-  }
-
-  .mobile-links button {
-    background: none;
-    border: none;
-    color: rgb(244,152,152);
-    font-size: 4vw;
-    text-align: right;
-    cursor: pointer;
-  }
 
 
 
