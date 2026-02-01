@@ -949,6 +949,9 @@ html {
   .desktop-menu {
     display: none;
   }
+  .hamburguesa_1{
+    display: flex;
+  }
 
   .mobile-menu {
     display: flex;
@@ -1055,8 +1058,7 @@ html {
 
   /* OCULTAR MINIATURAS */
   .works-band,
-  .works-nav,
-  menu .desktop-menu{
+  .works-nav{
     display: none;
   }
 
