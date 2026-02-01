@@ -943,7 +943,7 @@ html {
 }
 
 /* ======================= RESPONSIVE MOBILE ======================= */
-@media (max-width: 412px) {
+@media (max-width: 768px) {
 
   /* ===== OCULTAR / MOSTRAR MENÚS ===== */
   .desktop-menu {
