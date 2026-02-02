@@ -16,6 +16,16 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Portfolio</title>
+<script>
+  const media = window.matchMedia("(min-width: 769px)");
+  function goDesktop(e) {
+    if (e.matches) {
+      window.location.replace("/works.html");
+    }
+  }
+  goDesktop(media);
+  media.addEventListener("change", goDesktop);
+</script>
 
   <!-- Tipografías -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -228,3 +238,4 @@
 </script>
 </body>
 </html>
+
