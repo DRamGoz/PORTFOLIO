@@ -1,0 +1,128 @@
+
+/* RESET BÁSICO */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body.mobile {
+  font-family: system-ui, sans-serif;
+ background: #000205;
+  color: #000000;
+}
+
+/* HEADER */
+.mobile-header {
+  padding: 4vh 6vw;
+  text-align: center;
+}
+
+.mobile-header h1 {
+  font-size: 8vw;
+  color: #F49898;
+}
+
+/* WORKS */
+.work {
+    padding: 12vh 6vw;
+  display: flex;
+  flex-direction: column;
+  gap: 3vh;
+}
+
+.work h2 { 
+  font-size: 6vw;
+  color: #F49898;
+}
+
+.work img,
+.work video {
+  width: 100%;
+  height: auto;
+  border-radius: 0px;
+}
+
+.work p {
+  backdrop-filter: blur(0.9vw);
+ /* background-color: ;*/
+  font-size: 4vw;
+  line-height: 1.6;
+  color: rgba(255,255,255,0.85);
+}
+
+
+/* ================= MENÚ HAMBURGUESA MOBILE ================= */
+.menu.mobile-menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 10vh;
+  display: flex;
+  justify-content: space-between; /* logo a la izquierda, hamburguesa a la derecha */
+  align-items: center;
+  padding: 0 5vw; /* separación de los bordes */
+  z-index: 2000;
+  background: rgba(0,0,0,0,0.5); /* ligera transparencia si quieres */
+}
+
+/* LOGO EN MOBILE */
+.logo-float {
+  position: relative;
+  top: 0;
+  right: 0;
+  width: 30vw;
+  height: auto;
+  z-index: 2001;
+}
+
+/* ICONO ☰ */
+.hamburger {
+  width: 36px;
+  height: 26px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  cursor: pointer;
+}
+
+.hamburger span {
+  height: 4px;
+  background: rgb(244,152,152);
+  border-radius: 2px;
+}
+
+/* PANEL DESPLEGABLE */
+.mobile-links {
+  position: fixed;
+  top: 10vh;
+  right: 0;
+  width: 100%;
+  height: calc(100vh - 10vh);
+  background: rgba(0, 0, 0, 0.9);
+  display: none;
+  flex-direction: column;
+  align-items: flex-end;
+  padding: 6vh 8vw;
+  gap: 3vh;
+  z-index: 1999;
+  
+}
+
+/* BOTONES */
+.mobile-links button {
+  background: none;
+  border: none;
+  color: rgb(244,152,152);
+  font-size: 6vw;
+  text-align: right;
+  cursor: pointer;
+ 
+}
+
+/* SEPARADOR VISUAL ENTRE WORKS Y NAV */
+.mobile-links button:nth-child(6) {
+  margin-bottom: 2vh;
+}
+ 
