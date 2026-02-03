@@ -162,9 +162,11 @@ body.mobile {
   border: none;
   color: #fff;
   font-size: 5vw;
-  padding: 1.5vw 2vw;
-  border-radius: 2vw;
+  padding: 0;
+  border-radius: 0;
+  box-shadow: none;
 }
+
 
 .video-btn.full-btn {
   right: 12vw;
@@ -174,5 +176,6 @@ body.mobile {
 
 
  
+
 
 
