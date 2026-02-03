@@ -124,5 +124,33 @@ body.mobile {
 /* SEPARADOR VISUAL ENTRE WORKS Y NAV */
 .mobile-links button:nth-child(6) {
   margin-bottom: 2vh;
+}/* BOTÓN TOP MOBILE */
+#toTop {
+  position: fixed;
+  right: 4vw;
+  bottom: 4vh;
+  width: 12vw;
+  height: 12vw;
+  border: none;
+  background: transparent;
+  padding: 0;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.2s ease;
+  z-index: 3000;
 }
+
+#toTop img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+#toTop.show {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+
+
  
