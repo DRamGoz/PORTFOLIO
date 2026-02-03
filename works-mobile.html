@@ -105,6 +105,8 @@
       <video autoplay loop muted playsinline>
         <source src="img/susu.mp4" type="video/mp4">
       </video>
+      <button class="video-btn mute-btn" aria-label="Activar sonido">🔇</button>
+  <button class="video-btn full-btn" aria-label="Pantalla completa">⛶</button>
     </div>
   </section>
 
@@ -122,6 +124,8 @@
       <video autoplay loop muted playsinline>
         <source src="img/mario.mp4" type="video/mp4">
       </video>
+      <button class="video-btn mute-btn" aria-label="Activar sonido">🔇</button>
+  <button class="video-btn full-btn" aria-label="Pantalla completa">⛶</button>
     </div>
     </section>
 
@@ -140,6 +144,8 @@
       <video autoplay loop muted playsinline>
         <source src="img/Bruja.mp4" type="video/mp4">
       </video>
+      <button class="video-btn mute-btn" aria-label="Activar sonido">🔇</button>
+  <button class="video-btn full-btn" aria-label="Pantalla completa">⛶</button>
     </div>
       </section>
 
@@ -159,6 +165,8 @@
       <video autoplay loop muted playsinline>
         <source src="img/Arnold.mp4" type="video/mp4">
       </video>
+      <button class="video-btn mute-btn" aria-label="Activar sonido">🔇</button>
+  <button class="video-btn full-btn" aria-label="Pantalla completa">⛶</button>
     </div>
   </section>
 
@@ -181,6 +189,8 @@
       <video autoplay loop muted playsinline>
         <source src="img/Park.mp4" type="video/mp4">
       </video>
+      <button class="video-btn mute-btn" aria-label="Activar sonido">🔇</button>
+  <button class="video-btn full-btn" aria-label="Pantalla completa">⛶</button>
     </div>
   </section>
 
@@ -199,6 +209,8 @@
       <video autoplay loop muted playsinline>
         <source src="img/Jinx.mp4" type="video/mp4">
       </video>
+      <button class="video-btn mute-btn" aria-label="Activar sonido">🔇</button>
+  <button class="video-btn full-btn" aria-label="Pantalla completa">⛶</button>
     </div>
   </section>
 
@@ -227,12 +239,15 @@
       btn.textContent = video.muted ? '🔇' : '🔊';
     });
   });
-</script>
-</script>
-<script>
-  document.querySelectorAll('.open-btn').forEach(btn => {
+
+  document.querySelectorAll('.full-btn').forEach(btn => {
     btn.addEventListener('click', () => {
-      window.open(btn.dataset.video, '_blank');
+      const video = btn.parentElement.querySelector('video');
+      if (video.requestFullscreen) {
+        video.requestFullscreen();
+      } else if (video.webkitEnterFullscreen) {
+        video.webkitEnterFullscreen(); // iOS Safari
+      }
     });
   });
 </script>
@@ -254,5 +269,6 @@
 
 </body>
 </html>
+
 
 
