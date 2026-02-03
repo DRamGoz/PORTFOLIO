@@ -18,14 +18,33 @@
   <title>Portfolio</title>
 <script>
   const media = window.matchMedia("(min-width: 769px)");
+
+  function isVideoFullscreen() {
+    return !!(
+      document.fullscreenElement ||
+      document.webkitFullscreenElement ||
+      document.mozFullScreenElement ||
+      document.msFullscreenElement
+    );
+  }
+
   function goDesktop(e) {
+    if (isVideoFullscreen()) return;
     if (e.matches) {
       window.location.replace("/works.html");
     }
   }
+
   goDesktop(media);
   media.addEventListener("change", goDesktop);
+
+  document.addEventListener("fullscreenchange", () => {
+    if (!isVideoFullscreen()) {
+      goDesktop(media);
+    }
+  });
 </script>
+
 
   <!-- Tipografías -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -269,6 +288,7 @@
 
 </body>
 </html>
+
 
 
 
