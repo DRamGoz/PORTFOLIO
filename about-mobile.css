@@ -1,0 +1,153 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body.mobile-about {
+  background: #2F4159;
+  color: #F49898;
+  font-family: 'Lora', serif;
+  min-height: 100vh;
+  padding-top: 10vh;
+}
+
+.nav-background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 70px;
+  background: rgba(0,0,0,0.35);
+  backdrop-filter: blur(4px);
+  z-index: 50;
+  pointer-events: none;
+}
+
+.menu.mobile-menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 10vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 5vw;
+  z-index: 2000;
+  background: rgba(0,0,0,0.5);
+}
+
+.hamburger {
+  width: 36px;
+  height: 26px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  cursor: pointer;
+}
+
+.hamburger span {
+  height: 4px;
+  background: rgb(244,152,152);
+  border-radius: 2px;
+}
+
+.mobile-links {
+  position: fixed;
+  top: 10vh;
+  right: 0;
+  width: 100%;
+  height: calc(100vh - 10vh);
+  background: rgba(0,0,0,0.9);
+  display: none;
+  flex-direction: column;
+  align-items: flex-end;
+  padding: 6vh 8vw;
+  gap: 3vh;
+  z-index: 1999;
+}
+
+.mobile-links button {
+   font-family: "Audiowide", sans-serif;
+  background: none;
+  border: none;
+  color: rgb(244,152,152);
+  font-size: 3vw;
+  text-align: right;
+  cursor: pointer;
+}
+
+/* LOGO ABOUT MOBILE*/
+.logo-float {
+  position: fixed;
+  top: 1vh;
+  left: 58%;
+  height: 7vh;
+  transform: translateX(-50%);
+  width: auto;
+  z-index: 2001;
+}
+
+.about-mobile {
+  padding: 14vh 8vw 12vh;
+  display: flex;
+  flex-direction: column;
+  gap: 3vh;
+}
+
+.about-mobile h1 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 7vw;
+  color: #1884C4;
+  backdrop-filter: blur(4px);
+}
+
+.about-photo {
+  width: 100%;
+  height: auto;
+  background-color:transparent;
+}
+
+.about-mobile p {
+  font-size: 4vw;
+  line-height: 1.6;
+  color: rgba(255,255,255,0.85);
+ backdrop-filter: blur(4px);
+}
+
+.footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  backdrop-filter: blur(2px);
+  width: 100%;
+  padding: 1rem 0;
+  text-align: center;
+  background: rgba(0,0,0,0.15);
+  font-family: 'Poppins', sans-serif;
+  font-size: 0.7rem;
+  letter-spacing: 0.12em;
+  color: #F49898;
+  z-index: 10;
+}
+
+.footer-inner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+canvas {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: -1; /* o -1 si quieres detrás */
+  pointer-events: none;
+}
+
+
+

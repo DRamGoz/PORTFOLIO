@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <script>
+  const media = window.matchMedia("(min-width: 1024px) and (pointer:fine)");
+  function goDesktop(e) {
+    if (e.matches) {
+      window.location.replace("/about.html");
+    }
+  }
+  goDesktop(media);
+  media.addEventListener("change", goDesktop);
+</script>
+
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-STTEJPTSKR"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-STTEJPTSKR');
+  </script>
+
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio · About Mobile</title>
+  <link rel="icon" type="image/png" href="img/favicon.png">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Audiowide&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,600;0,700;1,400&family=Lora:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+
+  <script src="https://cdn.jsdelivr.net/npm/p5@1.11.7/lib/p5.min.js"></script>
+  <script src="sketch.js"></script>
+
+  <link rel="stylesheet" href="about-mobile.css">
+</head>
+
+<body class="mobile-about">
+  <div class="nav-background"></div>
+
+  <nav class="menu mobile-menu">
+    <div class="hamburger" id="hamburger">
+      <span></span><span></span><span></span>
+    </div>
+    <div class="mobile-links" id="mobileLinks">
+      <button onclick="location.href='home-mobile.html'">HOME</button>
+      <button onclick="location.href='works-mobile.html'">WORKS</button>
+      <button onclick="location.href='about-mobile.html'">ABOUT</button>
+      <button onclick="location.href='index-mobile.html'">EXIT</button>
+    </div>
+  </nav>
+
+  <img src="img/logo.png" alt="Logo" class="logo-float">
+
+  <section class="about-mobile">
+    <h1>ABOUT ME</h1>
+    <img src="img/about.png" alt="About me" class="about-photo">
+    
+     <p>
+          Cuando creo, siento que vuelvo a mi centro, que estoy haciendo algo que
+          realmente me apasiona. La creatividad es el único lugar donde puedo ser
+          yo mismo, donde las ideas encuentran forma y donde siento que todo encaja.
+        </p>
+
+        <p>
+          Aunque en mi camino profesional he acumulado experiencias y responsabilidades,
+          dentro del área del diseño digital soy un junior: alguien con ganas de aprender,
+          crecer y empezar desde cero algo que realmente me apasiona. Esa mezcla de
+          madurez profesional y hambre de aprendiz es lo que impulsa mi propósito.
+        </p>
+
+        <p>
+          A lo largo de estos años he trabajado con particulares y participado en
+          proyectos académicos que me han confirmado lo que ya intuía: crear me hace
+          feliz. Ver cómo una idea se convierte en una pieza visual que conecta con
+          alguien es una sensación que no quiero dejar de lado.
+        </p>
+
+        <p>
+          He descubierto sensaciones que mi empleo actual no me da: la emoción de crear
+          desde cero y la satisfacción de ver cómo una idea se materializa con sentido.
+          Son momentos reveladores que me han recordado que no quiero seguir aplazando
+          este nuevo sendero.
+        </p>
+  </section>
+
+  <footer class="footer">
+    <div class="footer-inner">
+     
+        
+      </div>
+      <p>© 2026 · David Ramgöz · All rights reserved</p>
+      
+    </div>
+  </footer>
+
+  <script>
+    const hamburger = document.getElementById("hamburger");
+    const mobileLinks = document.getElementById("mobileLinks");
+    hamburger.addEventListener("click", () => {
+      mobileLinks.style.display = (mobileLinks.style.display === "flex") ? "none" : "flex";
+    });
+  </script>
+</body>
+</html>
