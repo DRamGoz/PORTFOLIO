@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-STTEJPTSKR"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-STTEJPTSKR');
+  </script>
+
+  <script>
+  const media = window.matchMedia("(min-width: 1024px) and (pointer:fine)");
+
+  function goDesktop(e) {
+    if (e.matches) {
+      window.location.replace("/home.html");
+    }
+  }
+
+  goDesktop(media);
+  media.addEventListener("change", goDesktop);
+</script>
+
+
+
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio · Home Mobile</title>
+  <link rel="icon" type="image/png" href="img/favicon.png">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Audiowide&display=swap" rel="stylesheet">
+  
+
+
+  <script src="https://cdn.jsdelivr.net/npm/p5@1.11.7/lib/p5.min.js"></script>
+  <script src="sketch.js"></script>
+
+  <link rel="stylesheet" href="home-mobile.css">
+</head>
+
+
+  <body class="mobile-home">
+<div class="nav-background"></div>
+  <nav class="menu mobile-menu">
+    <div class="hamburger" id="hamburger">
+      <span></span><span></span><span></span>
+    </div>
+    <div class="mobile-links" id="mobileLinks">
+      <button onclick="location.href='home-mobile.html'">HOME</button>
+      <button onclick="location.href='works-mobile.html'">WORKS</button>
+      <button onclick="location.href='about-mobile.html'">ABOUT</button>
+       <button onclick="location.href='index.html'">EXIT</button>
+    </div>
+  </nav>
+  
+
+  <img src="img/logo.png" alt="Logo" class="logo-float">
+
+  <section class="video-hero">
+    <video autoplay loop muted playsinline>
+      <source src="img/Intro.mp4" type="video/mp4">
+    </video>
+  </section>
+
+  <footer class="footer">
+    <div class="footer-inner">
+      
+
+      <p>© 2026 · David Ramgöz · All rights reserved</p>
+
+     
+    </div>
+  </footer>
+
+  <script>
+    const hamburger = document.getElementById("hamburger");
+    const mobileLinks = document.getElementById("mobileLinks");
+    hamburger.addEventListener("click", () => {
+      mobileLinks.style.display = (mobileLinks.style.display === "flex") ? "none" : "flex";
+    });
+  </script>
+</body>
+</html>
