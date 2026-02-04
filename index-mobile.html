@@ -23,17 +23,18 @@
   <!-- p5 -->
   <script src="https://cdn.jsdelivr.net/npm/p5@1.11.7/lib/p5.min.js"></script>
   <script src="sketch.js"></script>
-  <script>
-  const media = window.matchMedia("(min-width: 769px)");
+   <script>
+  const media = window.matchMedia("(min-width: 1024px) and (pointer:fine)");
+
   function goDesktop(e) {
     if (e.matches) {
-      window.location.replace("/index.html");
+      window.location.replace("/home.html");
     }
   }
+
   goDesktop(media);
   media.addEventListener("change", goDesktop);
 </script>
-
 
   <!-- CSS -->
   <link rel="stylesheet" href="index-mobile.css">
@@ -53,3 +54,4 @@
   </script>
 </body>
 </html>
+
