@@ -67,13 +67,14 @@ body.mobile {
   background: rgba(0,0,0,0,0.5); /* ligera transparencia si quieres */
 }
 
-/* LOGO EN MOBILE */
+/* LOGO WORKS MOBILE*/
 .logo-float {
-  position: relative;
-  top: 0;
-  right: 0;
-  width: 30vw;
-  height: auto;
+  position: fixed;
+  top: 1vh;
+  left: 58%;
+  height: 7vh;
+  transform: translateX(-50%);
+  width: auto;
   z-index: 2001;
 }
 
@@ -112,10 +113,11 @@ body.mobile {
 
 /* BOTONES */
 .mobile-links button {
+  font-family: "Audiowide", sans-serif;
   background: none;
   border: none;
   color: rgb(244,152,152);
-  font-size: 6vw;
+  font-size: 4vw;
   text-align: right;
   cursor: pointer;
  
@@ -124,7 +126,8 @@ body.mobile {
 /* SEPARADOR VISUAL ENTRE WORKS Y NAV */
 .mobile-links button:nth-child(6) {
   margin-bottom: 2vh;
-}/* BOTÓN TOP MOBILE */
+}
+ /* BOTÓN TOP MOBILE */
 #toTop {
   position: fixed;
   right: 4vw;
@@ -171,11 +174,25 @@ body.mobile {
 .video-btn.full-btn {
   right: 12vw;
 }
+.mobile-header {
+  text-align: center;
+}
+
+.scroll-indicator-img {
+  display: block;
+  margin: 1vh auto 0;
+  background-color: #F49898;
+  border-radius: 50vh;
+  width: 10vw;
+  height: auto;
+  animation: scrollPulse 1.6s ease-in-out infinite;
+  transform: rotate(180deg);
+  opacity: 0.8;
+}
 
 
-
-
- 
-
-
-
+@keyframes scrollPulse {
+  0%   { transform: translateY(0) rotate(180deg); opacity: 0.6; }
+  50%  { transform: translateY(1vh) rotate(180deg); opacity: 1; }
+  100% { transform: translateY(0) rotate(180deg); opacity: 0.6; }
+}

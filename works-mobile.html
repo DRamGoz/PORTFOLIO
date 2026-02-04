@@ -1,6 +1,15 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-STTEJPTSKR"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-STTEJPTSKR');
+  </script>
+
   <meta charset="UTF-8">
   <title>Works · Mobile</title>
 
@@ -10,12 +19,7 @@
 </head>
 
 <body class="mobile">
-    <!DOCTYPE html>
-<html lang="es">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Portfolio</title>
+   
 <script>
   const media = window.matchMedia("(min-width: 769px)");
 
@@ -44,7 +48,6 @@
     }
   });
 </script>
-
 
   <!-- Tipografías -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -82,6 +85,7 @@
 
     <button onclick="location.href='home.html'">HOME</button>
     <button onclick="location.href='about.html'">ABOUT</button>
+    <button onclick="location.href='index.html'">EXIT</button>
   </div>
 </nav>
 
@@ -101,6 +105,13 @@
 
 <header class="mobile-header">
   <h1>PROYECTOS</h1>
+  <img src="img/top.png" alt="Scroll" class="scroll-indicator-img">
+</header>
+
+</header>
+
+</header>
+
 </header>
 
 <main>
@@ -270,7 +281,9 @@
     });
   });
 </script>
-  <script>
+
+</script>
+<script>
   const btn = document.getElementById("toTop");
 
   window.addEventListener("scroll", () => {
@@ -288,8 +301,3 @@
 
 </body>
 </html>
-
-
-
-
-
