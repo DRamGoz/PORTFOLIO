@@ -90,7 +90,7 @@ body.mobile-about {
 }
 
 .about-mobile {
-  padding: 14vh 8vw 12vh;
+  padding: 5vh 8vw 12vh;
   display: flex;
   flex-direction: column;
   gap: 3vh;

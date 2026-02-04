@@ -99,6 +99,13 @@
   <img src="img/top.png" alt="Subir">
 </button>
 
+<footer id="autoFooter" class="footer">
+  <div class="footer-inner">
+    <p>© 2026 · David Ramgöz · All rights reserved</p>
+  </div>
+</footer>
+
+
 <!-- ================= WORKS NAV ================= -->
 
 
@@ -296,6 +303,18 @@
 
   btn.addEventListener("click", () => {
     window.scrollTo({ top: 0, behavior: "smooth" });
+  });
+</script>
+<script>
+  const footer = document.getElementById("autoFooter");
+  let scrollTimeout;
+
+  window.addEventListener("scroll", () => {
+    footer.classList.add("hide");
+    clearTimeout(scrollTimeout);
+    scrollTimeout = setTimeout(() => {
+      footer.classList.remove("hide");
+    }, 600);
   });
 </script>
 
