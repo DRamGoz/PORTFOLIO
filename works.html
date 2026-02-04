@@ -1,33 +1,12 @@
 
+ 
+
 <!DOCTYPE html>
 <html lang="es">
 <head>
-<head>
-  <!-- Google tag (gtag.js) -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-STTEJPTSKR"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-    gtag('config', 'G-STTEJPTSKR');
-  </script>
-
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Portfolio</title>
-  <link rel="icon" type="image/png" href="img/favicon.png">
-
-  <!-- Redirect móvil -->
-  <script>
-    const media = window.matchMedia("(max-width: 768px)");
-    function goMobile(e) {
-      if (e.matches) {
-        window.location.replace("/works-mobile.html");
-      }
-    }
-    goMobile(media);
-    media.addEventListener("change", goMobile);
-  </script>
 
   <!-- Tipografías -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -37,26 +16,45 @@
   <!-- p5 -->
   <script src="https://cdn.jsdelivr.net/npm/p5@1.11.7/lib/p5.min.js"></script>
   <script src="sketch.js"></script>
+  <script>
+  if (window.innerWidth <= 768) {
+    window.location.replace("works-mobile.html");
+  }
+</script>
+<script>
+  const media = window.matchMedia("(max-width: 768px)");
+
+  function goMobile(e) {
+    if (e.matches) {
+      window.location.replace("/works-mobile.html");
+    }
+  }
+
+  goMobile(media);
+  media.addEventListener("change", goMobile);
+</script>
+
 
   <!-- CSS -->
   <link rel="stylesheet" href="style.css">
 </head>
 
-
 <body class="home">
+  
+
+
+  
 
 <div class="nav-background"></div>
 
- <!-- Menú -->
- 
-	  <nav class="menu desktop-menu">
-    <button onclick="location.href='home.html'">HOME</button>
-    <button onclick="location.href='works.html'">WORKS</button>
-    <button onclick="location.href='about.html'">ABOUT ME</button>
- </nav> 
+<!-- NAV -->
+<nav class="menu">
+  <button onclick="location.href='home.html'">HOME</button>
+  <button onclick="location.href='works.html'">WORKS</button>
+  <button onclick="location.href='about.html'">ABOUT ME</button>
+  
+</nav>
 
-
-	
 <img src="img/logo.png" alt="Logo" class="logo-float">
 
 <button id="toTop" aria-label="Volver arriba">
@@ -109,7 +107,6 @@
   </section>
 </section>
 
-
 <!-- ================= WORK 1 ================= -->
 <section id="work1" class="work-section work-1">
   <div class="work-inner">
@@ -141,10 +138,10 @@
     <!-- VIDEO -->
     <div class="work-item video video-1">
       <video autoplay loop muted playsinline>
-        <source src="img/Susu.mp4" type="video/mp4">
+        <source src="img/susu.mp4" type="video/mp4">
       </video>
       <button class="video-btn mute-btn">🔇</button>
-      <button class="video-btn open-btn" data-video="img/Susu.mp4">⛶</button>
+      <button class="video-btn open-btn" data-video="img/susu.mp4">⛶</button>
     </div>
 
     <!-- TEXTO 1 -->
@@ -276,10 +273,10 @@
     <!-- VIDEO -->
     <div class="work-item video video-3">
       <video autoplay loop playsinline muted>
-        <source src="img/Bruja.mp4" type="video/mp4">
+        <source src="img/bruja.mp4" type="video/mp4">
       </video>
       <button class="video-btn mute-btn">🔇</button>
-      <button class="video-btn open-btn" data-video="img/Bruja.mp4" title="Ver en grande">⛶</button>
+      <button class="video-btn open-btn" data-video="img/bruja.mp4" title="Ver en grande">⛶</button>
     </div>
 
     <!-- Texto -->
@@ -306,9 +303,10 @@
       <h2>ANIMACIÓN 2D · REEL ARNOLD</h2>
       <p>
         En esta ocasión presento un corto o reel de animación sobre un personaje mundialmente conocido como es TERMINATOR. Esto fue un proyecto académico en el cual practicábamos conceptos de animación y aplicación.
-        Para este caso concreto se produjo la animación del humo, fuego, la hoja de papel y el personaje de forma manual por Photoshop. Posteriormente se ilustró el fondo y todo su contenido por Sketchbook y luego los 
+        Para este caso concreto se produjo la animación del humo, fuego, la hoja de papel y el personaje de forma manual por Photoshop. Posteriormente se ilustró el fondo y todo su contenido por Sketchbook <Prog>y luego los 
         efectos de rayos, glitch y demás fueron sometidos a After Effects, para finalmente concluir en Adobe Premier Pro para los efectos de iluminación y color. La pieza se traduce en un simpático guiño a la 
         famosa saga de Terminator aplicando un poco sentido humorístico y sin olvidar su memorable coletilla -"Volveré!-"
+      </Prog>
       </p>
     </div>
 
@@ -344,10 +342,10 @@
     <!-- VIDEO -->
     <div class="work-item video video-4">
       <video autoplay loop playsinline muted>
-        <source src="img/Arnold.mp4" type="video/mp4">
+        <source src="img/arnold.mp4" type="video/mp4">
       </video>
       <button class="video-btn mute-btn">🔇</button>
-      <button class="video-btn open-btn" data-video="img/Arnold.mp4" title="Ver en grande">⛶</button>
+      <button class="video-btn open-btn" data-video="img/arnold.mp4" title="Ver en grande">⛶</button>
     </div>
 
   </div>
@@ -408,10 +406,10 @@
     <!-- VIDEO -->
     <div class="work-item video video-5">
       <video autoplay loop muted playsinline>
-        <source src="img/Park.mp4" type="video/mp4">
+        <source src="img/park.mp4" type="video/mp4">
       </video>
       <button class="video-btn mute-btn">🔇</button>
-      <button class="video-btn open-btn" data-video="img/Park.mp4" title="Ver en grande">⛶</button>
+      <button class="video-btn open-btn" data-video="img/park.mp4" title="Ver en grande">⛶</button>
     </div>
 
   </div>
@@ -457,10 +455,10 @@
     <!-- VIDEO -->
     <div class="work-item video video-6">
       <video autoplay loop muted playsinline>
-        <source src="img/Jinx.mp4" type="video/mp4">
+        <source src="img/jinx.mp4" type="video/mp4">
       </video>
       <button class="video-btn mute-btn">🔇</button>
-      <button class="video-btn open-btn" data-video="img/Jinx.mp4" title="Ver en grande">⛶</button>
+      <button class="video-btn open-btn" data-video="img/jinx.mp4" title="Ver en grande">⛶</button>
     </div>
 
   </div>
@@ -496,6 +494,7 @@
 </footer>
 
 <!-- ================= JS ================= -->
+
 <script>
   document.querySelectorAll('.mute-btn').forEach(btn => {
     btn.addEventListener('click', () => {

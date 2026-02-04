@@ -1,19 +1,21 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-	<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-STTEJPTSKR"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-STTEJPTSKR');
+  <script>
+  const media = window.matchMedia("(max-width: 768px)");
+  function goMobile(e) {
+    if (e.matches) {
+      window.location.replace("/about-mobile.html");
+    }
+  }
+  goMobile(media);
+  media.addEventListener("change", goMobile);
 </script>
+
   <meta charset="UTF-8" />
+  
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Portfolio</title>
-<link rel="icon" type="image/png" href="img/favicon.png">
 
   <!-- Tipografía -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -22,6 +24,8 @@
   <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,600;0,700;1,400&family=Lora:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
 <script src="https://cdn.jsdelivr.net/npm/p5@1.11.7/lib/p5.min.js"></script>
 	 <script src="sketch.js"></script>
+   
+
   <!-- CSS -->
   <link rel="stylesheet" href="style.css">
 </head>
@@ -30,25 +34,13 @@
   <div class="nav-background"></div>
     
   <!-- Menú -->
- 
-	  <nav class="menu desktop-menu">
+  <nav class="menu">
     <button onclick="location.href='home.html'">HOME</button>
     <button onclick="location.href='works.html'">WORKS</button>
     <button onclick="location.href='about.html'">ABOUT ME</button>
- </nav> 
-	 <!-- Menú hamburguesa (solo visible en móvil) -->
-  <nav class="menu mobile-menu">
-    <div class="hamburger" id="hamburger">
-      <span></span>
-      <span></span>
-      <span></span>
-    </div>
-    <div class="mobile-links" id="mobileLinks">
-      <button onclick="location.href='home.html'">HOME</button>
-      <button onclick="location.href='works.html'">WORKS</button>
-      <button onclick="location.href='about.html'">ABOUT ME</button>
-    </div>
+    
   </nav>
+
 <!-- Logo flotante -->
 <img src="img/logo.png" alt="Logo" class="logo-float">
 
@@ -130,18 +122,6 @@
 
  
 </footer>
-<script>
-  const hamburger = document.getElementById('hamburger');
-  const mobileLinks = document.getElementById('mobileLinks');
-
-  hamburger.addEventListener('click', () => {
-    if (mobileLinks.style.display === "flex") {
-      mobileLinks.style.display = "none";
-    } else {
-      mobileLinks.style.display = "flex";
-    }
-  });
-</script>
 
 
     </body>
