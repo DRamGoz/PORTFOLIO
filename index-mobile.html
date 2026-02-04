@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-STTEJPTSKR"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-STTEJPTSKR');
+  </script>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio · Mobile</title>
+  <link rel="icon" type="image/png" href="img/favicon.png">
+
+  <!-- Tipografía -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Audiowide&display=swap" rel="stylesheet">
+
+  <!-- p5 -->
+  <script src="https://cdn.jsdelivr.net/npm/p5@1.11.7/lib/p5.min.js"></script>
+  <script src="sketch.js"></script>
+  <script>
+  const media = window.matchMedia("(min-width: 769px)");
+  function goDesktop(e) {
+    if (e.matches) {
+      window.location.replace("/index.html");
+    }
+  }
+  goDesktop(media);
+  media.addEventListener("change", goDesktop);
+</script>
+
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="index-mobile.css">
+</head>
+
+<body class="mobile-index">
+  <header class="mobile-hero">
+    <img src="img/logo.png" alt="Logo" class="mobile-logo">
+    <p class="mobile-claim">DIGITAL DESIGNER · CREATIVE CODING · AUTHOR</p>
+    <button id="enterBtn">PORTFOLIO</button>
+  </header>
+
+  <script>
+    document.getElementById("enterBtn").addEventListener("click", () => {
+      window.location.href = "home-mobile.html";
+    });
+  </script>
+</body>
+</html>
