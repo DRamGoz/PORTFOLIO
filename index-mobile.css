@@ -11,6 +11,10 @@ body.mobile-index {
   min-height: 100vh;
   overflow: hidden;
 }
+.mobile-hero {
+  position: relative;
+  top: -4vh; /* sube todo */
+}
 
 .mobile-hero {
   min-height: 100vh;
@@ -20,8 +24,9 @@ body.mobile-index {
   align-items: center;
   justify-content: center;
   text-align: center;
-  padding: 8vh 8vw;
+  padding: 4vh 8vw;
 }
+
 
 .mobile-logo {
   width: 60vw;
