@@ -17,10 +17,10 @@ body.mobile-about {
   top: 0;
   left: 0;
   width: 100vw;
-  height: 70px;
-  background: rgba(0,0,0,0.35);
+  height: 10px;
+  background: rgba(0,0,0,0.25);
   backdrop-filter: blur(4px);
-  z-index: 50;
+  z-index: 1999;
   pointer-events: none;
 }
 
@@ -35,7 +35,7 @@ body.mobile-about {
   align-items: center;
   padding: 0 5vw;
   z-index: 2000;
-  background: rgba(0,0,0,0.5);
+  background: transparent;
 }
 
 .hamburger {
@@ -148,6 +148,7 @@ canvas {
   z-index: -1; /* o -1 si quieres detrás */
   pointer-events: none;
 }
+
 
 
 
